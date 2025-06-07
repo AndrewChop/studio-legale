@@ -1,4 +1,4 @@
-import { getChiSiamo } from "@/lib/api";
+import { getChiSiamo } from "../lib/api";
 
 export default async function ChiSiamoPage() {
   const content = await getChiSiamo();

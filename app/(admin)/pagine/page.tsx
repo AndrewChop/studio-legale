@@ -1,7 +1,7 @@
-'use client'
-import { useState, useEffect } from "react";
-import { updatePage, getPage } from "@/lib/api";
-import { Button } from "@/components/ui/button";
+"use client";
+import { Button } from "../../../components/ui/button";
+import { getPage, updatePage } from "../../../lib/api";
+import { useEffect, useState } from "react";
 
 export default function AdminEditor() {
   const [content, setContent] = useState("");
