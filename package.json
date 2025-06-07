@@ -1,0 +1,28 @@
+{
+  "name": "studio-legale",
+  "version": "1.0.0",
+  "description": "This is a project that we are using for a website",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewChop/studio-legale.git"
+  },
+  "author": "AndrewChop",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AndrewChop/studio-legale/issues"
+  },
+  "homepage": "https://github.com/AndrewChop/studio-legale#readme",
+  "devDependencies": {
+    "prisma": "^6.1.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.1.0"
+  }
+}
