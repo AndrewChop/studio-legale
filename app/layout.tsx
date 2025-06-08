@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
-import "./../styles/globals.css";
+import "../styles/globals.css"; // ✅ qui puoi anche semplificare il path
+
 import { ReactNode } from "react";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -7,7 +8,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="it">
       <body>
         <Navbar />
-        <main className="container mx-auto px-4 py-8">{children} </main>
+        <main className="container mx-auto px-4 py-8">{children}</main>
       </body>
     </html>
   );
