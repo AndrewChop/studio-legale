@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/AndrewChop/studio-legale#readme",
   "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4",
     "@types/node": "22.15.30",
     "@types/react": "19.1.6",
     "autoprefixer": "^10.4.21",
@@ -34,8 +35,13 @@
   "dependencies": {
     "@prisma/client": "^6.1.0",
     "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "lucide-react": "^0.513.0",
     "next": "^15.3.3",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "tailwind-variants": "^1.0.0"
   }
 }
