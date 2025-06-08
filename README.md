@@ -3,8 +3,8 @@
 Questo è il repository del sito web ufficiale per lo Studio Legale.  
 È un'applicazione web moderna con doppia interfaccia:
 
-- **Client:** accessibile da chiunque per leggere pagine e articoli
-- **Admin:** pannello riservato per gestire contenuti dinamici
+- **Client:** accessibile da chiunque per leggere pagine e articoli;
+- **Admin:** pannello riservato per gestire contenuti dinamici.
 
 ---
 
