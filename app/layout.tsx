@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import "../styles/globals.css"; // ✅ qui puoi anche semplificare il path
+import "../styles/globals.css"; 
 
 import { ReactNode } from "react";
 
