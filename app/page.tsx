@@ -33,8 +33,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <ChiSiamoPreview />
       <AreeAttivita />
+      <ChiSiamoPreview />
       <ArticoliRecenti posts={mockPosts} />
       <ContattiCTA />
       <Footer />

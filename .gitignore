@@ -45,3 +45,4 @@ coverage/
 
 # ✅ Output di Tailwind (facoltativo se usi purge)
 *.css.map
+.vercel
