@@ -43,13 +43,14 @@ const mockPosts: Post[] = [
 ];
 
 type Params = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
-export default function ArticoloPage({ params }: Params) {
-  const articolo = mockPosts.find((p) => p.slug === params.slug);
+export default async function ArticoloPage({ params }: Params) {
+  const { slug } = await params;
+  const articolo = mockPosts.find((p) => p.slug === slug);
 
   if (!articolo) return notFound();
 
