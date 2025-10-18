@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-primary: 46 71% 46%;
+  --color-primary-light: 45 85% 55%;
+  --color-secondary: 215 47% 13%;
+  --color-accent: 200 31% 80%;
+  --color-highlight: 51 100% 63%;
+  --color-brown: 45 74% 20%;
+}
+
+@layer utilities {
+  .text-primary {
+    color: hsl(var(--color-primary));
+  }
+
+  .hover\:text-primary-light:hover {
+    color: hsl(var(--color-primary-light));
+  }
+}
+
+body {
+  background-color: white;
+  color: hsl(var(--color-secondary));
+  font-family: theme('fontFamily.sans');
+}
