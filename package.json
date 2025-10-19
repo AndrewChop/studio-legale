@@ -13,8 +13,9 @@
     "lint": "next lint",
     "postinstall": "prisma generate",
     "db:migrate": "prisma migrate deploy",
-    "deploy:staging": "git push origin dev",
-    "deploy:production": "git checkout main && git merge dev && git push origin main && git checkout dev",
+    "deploy:staging": "git push origin dev && echo '✅ Deployed to staging! Go to vercel.com to set alias if needed'",
+    "deploy:production": "git checkout main && git merge dev && git push origin main && git checkout dev && echo '✅ Deployed to production!'",
+    "staging-alias": "npx vercel alias set $(npx vercel ls | grep studio-legale | head -1 | awk '{print $1}') studio-legale-amaranto-stg.vercel.app",
     "db:seed": "prisma db seed",
     "create-admin": "node scripts/create-admin.js"
   },
