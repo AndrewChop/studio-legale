@@ -9,5 +9,8 @@
       "main": true,
       "dev": true
     }
+  },
+  "github": {
+    "silent": true
   }
 }
