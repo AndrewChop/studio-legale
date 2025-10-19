@@ -12,5 +12,6 @@
   "github": {
     "enabled": true,
     "autoExpose": false
-  }
+  },
+  "alias": ["studio-legale-amaranto"]
 }
