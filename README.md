@@ -27,3 +27,4 @@ Clona il repository e installa le dipendenze:
 git clone git@github.com:AndrewChop/studio-legale.git
 cd studio-legale
 npm install# Force deployment
+# Test fix
