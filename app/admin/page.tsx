@@ -1,40 +1,40 @@
-"use client"
+"use client";
 
-import { useSession, signOut } from "next-auth/react"
-import { useRouter } from "next/navigation"
-import { useEffect } from "react"
-import { Button } from "@/components/ui/button"
-import { LogOut, FileText, Settings, Users, Home } from "lucide-react"
-import Link from "next/link"
+import { useSession, signOut } from "next-auth/react";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { LogOut, FileText, Settings, Users, Home } from "lucide-react";
+import Link from "next/link";
 
 export default function AdminDashboard() {
-  const { data: session, status } = useSession()
-  const router = useRouter()
+  const { data: session, status } = useSession();
+  const router = useRouter();
 
   useEffect(() => {
-    if (status === "loading") return // Ancora caricando
-    
+    if (status === "loading") return; // Ancora caricando
+
     if (!session) {
-      router.push("/login")
-      return
+      router.push("/login");
+      return;
     }
 
     if (session.user?.role !== "admin") {
-      router.push("/")
-      return
+      router.push("/");
+      return;
     }
-  }, [session, status, router])
+  }, [session, status, router]);
 
   if (status === "loading") {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-gray-900"></div>
       </div>
-    )
+    );
   }
 
   if (!session || session.user?.role !== "admin") {
-    return null
+    return null;
   }
 
   return (
@@ -58,7 +58,7 @@ export default function AdminDashboard() {
                   Vai al Sito
                 </Button>
               </Link>
-              <Button 
+              <Button
                 onClick={() => signOut({ callbackUrl: "/" })}
                 variant="outline"
                 size="sm"
@@ -74,7 +74,6 @@ export default function AdminDashboard() {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
         <div className="px-4 py-6 sm:px-0">
-          
           {/* Stats Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="bg-white overflow-hidden shadow rounded-lg">
@@ -134,7 +133,6 @@ export default function AdminDashboard() {
 
           {/* Actions Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
             {/* Gestione Articoli */}
             <div className="bg-white overflow-hidden shadow rounded-lg">
               <div className="p-6">
@@ -151,9 +149,7 @@ export default function AdminDashboard() {
                 </div>
                 <div className="mt-6">
                   <Link href="/admin/articoli">
-                    <Button className="w-full">
-                      Gestisci Articoli
-                    </Button>
+                    <Button className="w-full">Gestisci Articoli</Button>
                   </Link>
                 </div>
               </div>
@@ -175,9 +171,7 @@ export default function AdminDashboard() {
                 </div>
                 <div className="mt-6">
                   <Link href="/admin/pagine">
-                    <Button className="w-full">
-                      Gestisci Pagine
-                    </Button>
+                    <Button className="w-full">Gestisci Pagine</Button>
                   </Link>
                 </div>
               </div>
@@ -199,17 +193,14 @@ export default function AdminDashboard() {
                 </div>
                 <div className="mt-6">
                   <Link href="/admin/utenti">
-                    <Button className="w-full">
-                      Gestisci Utenti
-                    </Button>
+                    <Button className="w-full">Gestisci Utenti</Button>
                   </Link>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </main>
     </div>
-  )
+  );
 }

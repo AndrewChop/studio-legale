@@ -1,21 +1,21 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { useSession } from "next-auth/react"
-import { useRouter } from "next/navigation"
-import { Button } from "@/components/ui/button"
-import { Plus, Edit, Trash2, ArrowLeft } from "lucide-react"
-import Link from "next/link"
+import { useState, useEffect } from "react";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import { Plus, Edit, Trash2, ArrowLeft } from "lucide-react";
+import Link from "next/link";
 
 type Article = {
-  id: string
-  title: string
-  slug: string
-  summary: string
-  content: string
-  createdAt: Date
-  updatedAt: Date
-}
+  id: string;
+  title: string;
+  slug: string;
+  summary: string;
+  content: string;
+  createdAt: Date;
+  updatedAt: Date;
+};
 
 // Mock data - da sostituire con API reale
 const mockArticles: Article[] = [
@@ -29,7 +29,7 @@ const mockArticles: Article[] = [
     updatedAt: new Date("2023-10-01"),
   },
   {
-    id: "2", 
+    id: "2",
     title: "Diritti dei militari in servizio",
     slug: "diritti-dei-militari-in-servizio",
     summary: "Tutela dei diritti del personale militare e ricorsi.",
@@ -37,34 +37,38 @@ const mockArticles: Article[] = [
     createdAt: new Date("2023-09-15"),
     updatedAt: new Date("2023-09-15"),
   },
-]
+];
 
 export default function AdminArticoliPage() {
-  const { data: session, status } = useSession()
-  const router = useRouter()
-  const [articles, setArticles] = useState<Article[]>(mockArticles)
+  const { data: session, status } = useSession();
+  const router = useRouter();
+  const [articles, setArticles] = useState<Article[]>(mockArticles);
 
   useEffect(() => {
-    if (status === "loading") return
-    
+    if (status === "loading") return;
+
     if (!session || session.user?.role !== "admin") {
-      router.push("/login")
-      return
+      router.push("/login");
+      return;
     }
-  }, [session, status, router])
+  }, [session, status, router]);
 
   const handleDelete = (id: string) => {
     if (confirm("Sei sicuro di voler eliminare questo articolo?")) {
-      setArticles(articles.filter(article => article.id !== id))
+      setArticles(articles.filter((article) => article.id !== id));
     }
-  }
+  };
 
   if (status === "loading") {
-    return <div className="min-h-screen flex items-center justify-center">Caricamento...</div>
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        Caricamento...
+      </div>
+    );
   }
 
   if (!session || session.user?.role !== "admin") {
-    return null
+    return null;
   }
 
   return (
@@ -97,7 +101,6 @@ export default function AdminArticoliPage() {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
         <div className="px-4 py-6 sm:px-0">
-          
           {/* Articles List */}
           <div className="bg-white shadow overflow-hidden sm:rounded-md">
             <ul className="divide-y divide-gray-200">
@@ -119,7 +122,8 @@ export default function AdminArticoliPage() {
                         {article.summary}
                       </p>
                       <p className="mt-1 text-xs text-gray-400">
-                        Creato il {article.createdAt.toLocaleDateString("it-IT")}
+                        Creato il{" "}
+                        {article.createdAt.toLocaleDateString("it-IT")}
                       </p>
                     </div>
                     <div className="ml-4 flex items-center space-x-2">
@@ -128,8 +132,8 @@ export default function AdminArticoliPage() {
                           <Edit className="h-4 w-4" />
                         </Button>
                       </Link>
-                      <Button 
-                        variant="outline" 
+                      <Button
+                        variant="outline"
                         size="sm"
                         onClick={() => handleDelete(article.id)}
                         className="text-red-600 hover:text-red-800"
@@ -154,9 +158,8 @@ export default function AdminArticoliPage() {
               </Link>
             </div>
           )}
-
         </div>
       </main>
     </div>
-  )
+  );
 }
