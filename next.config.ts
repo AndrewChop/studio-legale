@@ -1,11 +1,11 @@
-import type { NextConfig } from 'next'
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   // Abilita funzioni sperimentali per path moderni
   experimental: {
     // Supporto per TypeScript ottimizzato
-    optimizePackageImports: ['@'],
+    optimizePackageImports: ["@"],
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;
