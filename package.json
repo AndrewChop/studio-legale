@@ -13,9 +13,8 @@
     "lint": "next lint",
     "postinstall": "prisma generate",
     "db:migrate": "prisma migrate deploy",
-    "deploy:staging": "git push origin dev && npx vercel --prod=false && npx vercel alias",
+    "deploy:staging": "git push origin dev",
     "deploy:production": "git checkout main && git merge dev && git push origin main && git checkout dev",
-    "vercel:alias:staging": "npx vercel alias set $(npx vercel ls | grep dev | head -1 | awk '{print $2}') studio-legale-amaranto-stg.vercel.app",
     "db:seed": "prisma db seed",
     "create-admin": "node scripts/create-admin.js"
   },
