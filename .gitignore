@@ -46,3 +46,7 @@ coverage/
 # ✅ Output di Tailwind (facoltativo se usi purge)
 *.css.map
 .vercel
+
+# ✅ File di sistema macOS
+.DS_Store
+*/.DS_Store
