@@ -1,4 +1,4 @@
-import AreeAttivita from "../components/Areas";
+import ResponsiveAreas from "../components/ResponsiveAreas";
 import ContattiCTA from "../components/Contacts";
 import ResponsiveHero from "../components/ResponsiveHero";
 import ArticoliRecenti from "../components/last-articles";
@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <>
       <ResponsiveHero />
-      <AreeAttivita />
+      <ResponsiveAreas />
       <ChiSiamoPreview />
       <ArticoliRecenti posts={mockPosts} />
       <ContattiCTA />
