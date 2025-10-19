@@ -26,4 +26,4 @@ Clona il repository e installa le dipendenze:
 ```bash
 git clone git@github.com:AndrewChop/studio-legale.git
 cd studio-legale
-npm install
+npm install# Force deployment
