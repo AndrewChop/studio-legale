@@ -1,16 +1,7 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
-  "installCommand": "npm install", 
+  "installCommand": "npm install",
   "devCommand": "npm run dev",
-  "git": {
-    "deploymentEnabled": {
-      "main": true,
-      "dev": false
-    }
-  },
-  "github": {
-    "enabled": true,
-    "autoExpose": false
-  }
+  "alias": ["studio-legale-amaranto.vercel.app"]
 }
