@@ -1,6 +1,5 @@
 import AreeAttivita from "../components/Areas";
 import ContattiCTA from "../components/Contacts";
-import Footer from "../components/footer";
 import Hero from "../components/Hero";
 import ArticoliRecenti from "../components/last-articles";
 import ChiSiamoPreview from "../components/Presentation";
@@ -37,7 +36,6 @@ export default function Home() {
       <ChiSiamoPreview />
       <ArticoliRecenti posts={mockPosts} />
       <ContattiCTA />
-      <Footer />
     </>
   );
 }
