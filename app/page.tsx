@@ -1,6 +1,6 @@
 import AreeAttivita from "../components/Areas";
 import ContattiCTA from "../components/Contacts";
-import Hero from "../components/Hero";
+import ResponsiveHero from "../components/ResponsiveHero";
 import ArticoliRecenti from "../components/last-articles";
 import ChiSiamoPreview from "../components/Presentation";
 
@@ -31,7 +31,7 @@ const mockPosts = [
 export default function Home() {
   return (
     <>
-      <Hero />
+      <ResponsiveHero />
       <AreeAttivita />
       <ChiSiamoPreview />
       <ArticoliRecenti posts={mockPosts} />

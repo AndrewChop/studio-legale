@@ -2,7 +2,7 @@ import { withAuth } from "next-auth/middleware"
 
 export default withAuth(
   function middleware(req) {
-    // Middleware aggiuntivo se necessario
+    // Middleware per ora semplice, aggiungeremo i18n dopo
   },
   {
     callbacks: {
