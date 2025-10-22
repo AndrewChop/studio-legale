@@ -19,9 +19,12 @@ export default function ChiSiamoPreview() {
               className="rounded-full object-cover"
             />
             <div>
-              <h3 className="text-xl font-semibold text-gray-900">
+              <h3 className="text-xl font-bold text-gray-900">
                 Avv. Marzia Amaranto
               </h3>
+              <p className="text-gray-700 font-semibold text-sm">
+                Avvocato fondatore e Titolare
+              </p>
               <p className="text-gray-700 text-sm">
                 Specializzata in diritto civile e familiare. Attiva su tutela
                 del minore, separazioni e mediazione.
@@ -42,6 +45,7 @@ export default function ChiSiamoPreview() {
               <h3 className="text-xl font-semibold text-gray-900">
                 Avv. Antonio Amaranto
               </h3>
+              <p className="text-gray-700 font-semibold text-sm">Of Counsel</p>
               <p className="text-gray-700 text-sm">
                 Esperto in diritto penale e amministrativo militare. Oltre 20
                 anni di esperienza nella difesa.

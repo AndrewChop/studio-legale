@@ -2,31 +2,10 @@
 
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { useState } from "react";
+import { useHeroTranslations } from "../contexts/TranslationContext";
 
 export default function ResponsiveHero() {
-  const [currentLang, setCurrentLang] = useState<"it" | "en">("it");
-
-  const translations = {
-    it: {
-      title: "Difendiamo i tuoi diritti con competenza e serietà",
-      subtitle:
-        "Lo Studio Legale Amaranto offre consulenza e assistenza legale in ambito civile, penale e amministrativo militare.",
-      cta: "Prenota una consulenza",
-      trustResponse: "Risposta entro 24h",
-    },
-    en: {
-      title: "We defend your rights with competence and seriousness",
-      subtitle:
-        "Studio Legale Amaranto offers legal advice and assistance in civil, criminal and military administrative law.",
-      cta: "Book a consultation",
-      trustResponse: "Response within 24h",
-    },
-  };
-
-  const t = translations[currentLang];
-
-  // Listen for language changes from navbar (you can implement a global context later)
+  const { t } = useHeroTranslations();
 
   return (
     <section className="bg-muted py-8 sm:py-12 md:py-16 lg:py-20 border-b border-border">
@@ -53,10 +32,10 @@ export default function ResponsiveHero() {
 
         {/* Trust indicators for mobile */}
         <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-sm text-muted-foreground">
-          {/* <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-green-500 rounded-full"></div>
             <span>{t.trustFree}</span>
-          </div> */}
+          </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
             <span>{t.trustResponse}</span>
