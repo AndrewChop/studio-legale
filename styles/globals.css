@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -72,7 +74,40 @@
 body {
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
-  font-family: theme('fontFamily.sans');
-  /* Offset for fixed top bar (42px) */
-  padding-top: 32px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* Offset for unified fixed navbar (top bar + main navbar ~114px) */
+  padding-top: 114px;
+}
+
+/* Professional Typography for Legal Studio */
+h1,
+h2,
+h3,
+.title-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  line-height: 1.2;
+}
+
+/* Text weight utilities for legal content */
+.font-legal-medium {
+  font-weight: 500;
+}
+
+.font-legal-semibold {
+  font-weight: 600;
+}
+
+.font-legal-bold {
+  font-weight: 700;
+}
+
+/* Professional text styles */
+.text-professional {
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.01em;
 }
