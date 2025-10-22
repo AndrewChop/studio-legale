@@ -1,0 +1,105 @@
+{
+  "topbar": {
+    "message": "La tua difesa legale inizia qui. Esperienza e competenza al tuo servizio.",
+    "phone": "+39 338 347 0581",
+    "email": "studiolegaleamaranto@gmail.com"
+  },
+  "navbar": {
+    "studioName": "Studio Legale",
+    "subtitle": "Amaranto",
+    "home": "Home",
+    "about": "Chi Siamo",
+    "services": "Servizi",
+    "articles": "Articoli",
+    "contacts": "Contatti",
+    "menu": "Menu",
+    "changeLanguage": "Cambia lingua",
+    "bookConsultation": "Prenota Consulenza"
+  },
+  "hero": {
+    "title": "Difendiamo i tuoi diritti con competenza e serietà",
+    "subtitle": "Lo Studio Legale Amaranto offre consulenza e assistenza legale in ambito civile e penale.",
+    "cta": "Prenota una consulenza",
+    "trustFree": "Consulenza in sede e online",
+    "trustResponse": "Risposta entro 24h"
+  },
+  "areas": {
+    "title": "Aree di Attività",
+    "subtitle": "Competenza ed esperienza in diversi settori del diritto",
+    "civil": {
+      "title": "Diritto Civile",
+      "description": "Contratti, proprietà, risarcimenti, successioni. Consulenza per questioni patrimoniali e personali."
+    },
+    "criminal": {
+      "title": "Diritto Penale",
+      "description": "Difesa in procedimenti penali, reati comuni e militari. Assistenza legale completa per la tutela dei tuoi diritti."
+    },
+    "family": {
+      "title": "Diritto di Famiglia",
+      "description": "Separazioni, divorzi, contratti di convivenza, tutela minori e affido. Supporto legale in momenti delicati della vita familiare."
+    },
+    "military": {
+      "title": "Diritto Condominiale",
+      "description": "Tutela dei diritti dei condomini e gestione delle controversie condominiali. Assistenza legale per questioni di proprietà e regolamenti."
+    },
+    "ctaText": "Hai bisogno di assistenza legale?",
+    "ctaButton": "Contattaci Ora"
+  },
+  "presentation": {
+    "title": "Chi siamo",
+    "subtitle": "Esperienza e professionalità al vostro servizio",
+    "description": "Lo Studio Legale Amaranto è specializzato in diritto civile e familiare. Attivo su tutela del diritto, separazioni e mediazione.",
+    "cta": "Scopri di più"
+  },
+  "articles": {
+    "title": "Articoli Recenti",
+    "subtitle": "Approfondimenti e aggiornamenti legali",
+    "readMore": "Leggi tutto",
+    "viewAll": "Vedi tutti gli articoli"
+  },
+  "contacts": {
+    "title": "Contattaci",
+    "subtitle": "Siamo qui per aiutarti",
+    "name": "Nome",
+    "email": "Email",
+    "phone": "Telefono",
+    "message": "Messaggio",
+    "send": "Invia messaggio",
+    "address": "Indirizzo",
+    "workingHours": "Orari di lavoro",
+    "monday": "Lunedì - Venerdì",
+    "hours": "9:00 - 18:00",
+    "saturday": "Sabato",
+    "saturdayHours": "9:00 - 13:00"
+  },
+  "footer": {
+    "studioName": "Studio Legale Amaranto",
+    "description": "Consulenza legale professionale in diritto civile, penale e amministrativo militare.",
+    "quickLinks": "Link Rapidi",
+    "legalInfo": "Informazioni Legali",
+    "privacy": "Privacy Policy",
+    "terms": "Termini di Servizio",
+    "contact": "Contatti",
+    "copyright": "© 2023 Studio Legale Amaranto. Tutti i diritti riservati."
+  },
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Si è verificato un errore",
+    "success": "Operazione completata con successo",
+    "confirm": "Conferma",
+    "cancel": "Annulla",
+    "save": "Salva",
+    "edit": "Modifica",
+    "delete": "Elimina",
+    "back": "Indietro",
+    "next": "Avanti",
+    "previous": "Precedente"
+  },
+  "forms": {
+    "required": "Campo obbligatorio",
+    "invalidEmail": "Email non valida",
+    "invalidPhone": "Numero di telefono non valido",
+    "messageSent": "Messaggio inviato con successo",
+    "messageError": "Errore nell'invio del messaggio"
+  }
+}
