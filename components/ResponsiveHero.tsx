@@ -33,7 +33,7 @@ export default function ResponsiveHero() {
         {/* Trust indicators for mobile */}
         <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-sm text-muted-foreground">
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+            <div className="w-2 h-2 bg-success rounded-full"></div>
             <span>{t.trustFree}</span>
           </div>
           <div className="flex items-center gap-2">
