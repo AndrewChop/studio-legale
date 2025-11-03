@@ -1,4 +1,4 @@
-import ResponsiveNavbar from "../components/ResponsiveNavbar";
+import ResponsiveNavbar from "../components/Navbar";
 import Footer from "../components/footer";
 import "@/styles/globals.css";
 import ClientSessionProvider from "../components/ClientSessionProvider";
