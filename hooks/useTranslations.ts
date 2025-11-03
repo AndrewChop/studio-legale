@@ -22,9 +22,7 @@ export function useTranslations() {
 
   // Carica i messaggi quando cambia la lingua
   useEffect(() => {
-    console.log("🔄 Language changed to:", currentLang);
     const newMessages = allMessages[currentLang];
-    console.log("✅ Loading messages:", newMessages);
     setMessages(newMessages);
   }, [currentLang]);
 
@@ -32,12 +30,8 @@ export function useTranslations() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const savedLang = localStorage.getItem("language") as "it" | "en";
-      console.log("💾 Saved language in localStorage:", savedLang);
       if (savedLang && (savedLang === "it" || savedLang === "en")) {
-        console.log("🔄 Setting language from localStorage to:", savedLang);
         setCurrentLang(savedLang);
-      } else {
-        console.log("🇮🇹 No saved language, defaulting to Italian");
       }
     }
   }, []);
