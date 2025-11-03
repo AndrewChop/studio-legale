@@ -1,6 +1,12 @@
 "use client";
 
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import React, {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  ReactNode,
+} from "react";
 
 // Importiamo i file JSON direttamente
 import itMessages from "../messages/it.json";
@@ -16,7 +22,9 @@ interface TranslationContextType {
   t: (key: string) => string;
 }
 
-const TranslationContext = createContext<TranslationContextType | undefined>(undefined);
+const TranslationContext = createContext<TranslationContextType | undefined>(
+  undefined
+);
 
 const allMessages = {
   it: itMessages,
@@ -46,18 +54,16 @@ export function TranslationProvider({ children }: { children: ReactNode }) {
 
   // Funzione per cambiare lingua
   const setLanguage = (lang: Language) => {
-    console.log(`🌍 Changing language to: ${lang}`);
     setCurrentLang(lang);
     setMessages(allMessages[lang]);
     localStorage.setItem("language", lang);
-    console.log(`✅ Language changed successfully to: ${lang}`);
   };
 
   // Carica la lingua salvata all'avvio
   useEffect(() => {
     if (typeof window !== "undefined") {
       const savedLang = localStorage.getItem("language") as Language;
-      
+
       if (savedLang && (savedLang === "it" || savedLang === "en")) {
         setCurrentLang(savedLang);
         setMessages(allMessages[savedLang]);
@@ -83,14 +89,16 @@ export function TranslationProvider({ children }: { children: ReactNode }) {
 export function useTranslations() {
   const context = useContext(TranslationContext);
   if (context === undefined) {
-    throw new Error('useTranslations must be used within a TranslationProvider');
+    throw new Error(
+      "useTranslations must be used within a TranslationProvider"
+    );
   }
   return context;
 }
 
 // Hook specifici che si aggiornano automaticamente
 export function useNavbarTranslations() {
-  const { t, currentLang, setLanguage } = useTranslations();
+  const { t, currentLang, setLanguage, messages } = useTranslations();
 
   return {
     currentLang,
@@ -100,12 +108,13 @@ export function useNavbarTranslations() {
       subtitle: t("navbar.subtitle"),
       home: t("navbar.home"),
       about: t("navbar.about"),
-      services: t("navbar.services"),
+      areas: t("navbar.services"),
       articles: t("navbar.articles"),
       contacts: t("navbar.contacts"),
       menu: t("navbar.menu"),
       changeLanguage: t("navbar.changeLanguage"),
       bookConsultation: t("navbar.bookConsultation"),
+      navigation: messages.navbar?.navigation || {},
     },
   };
 }

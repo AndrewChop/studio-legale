@@ -75,20 +75,22 @@ export function useTranslations() {
 // Hook specifico per il Navbar
 export function useNavbarTranslations() {
   const { t, currentLang, setLanguage, messages } = useTranslations();
-  
 
-  const navbarTranslations = useMemo(() => ({
-    studioName: t("navbar.studioName"),
-    subtitle: t("navbar.subtitle"),
-    home: t("navbar.home"),
-    about: t("navbar.about"),
-    services: t("navbar.services"),
-    articles: t("navbar.articles"),
-    contacts: t("navbar.contacts"),
-    menu: t("navbar.menu"),
-    changeLanguage: t("navbar.changeLanguage"),
-    bookConsultation: t("navbar.bookConsultation"),
-  }), [messages, currentLang]);
+  const navbarTranslations = useMemo(
+    () => ({
+      studioName: t("navbar.studioName"),
+      subtitle: t("navbar.subtitle"),
+      home: t("navbar.home"),
+      about: t("navbar.about"),
+      areas: t("navbar.areas"),
+      articles: t("navbar.articles"),
+      contacts: t("navbar.contacts"),
+      menu: t("navbar.menu"),
+      changeLanguage: t("navbar.changeLanguage"),
+      bookConsultation: t("navbar.bookConsultation"),
+    }),
+    [messages, currentLang]
+  );
 
   return {
     currentLang,
@@ -100,14 +102,17 @@ export function useNavbarTranslations() {
 // Hook specifico per l'Hero
 export function useHeroTranslations() {
   const { t, messages, currentLang } = useTranslations();
-  
-  const heroTranslations = useMemo(() => ({
-    title: t("hero.title"),
-    subtitle: t("hero.subtitle"),
-    cta: t("hero.cta"),
-    trustFree: t("hero.trustFree"),
-    trustResponse: t("hero.trustResponse"),
-  }), [messages, currentLang]);
+
+  const heroTranslations = useMemo(
+    () => ({
+      title: t("hero.title"),
+      subtitle: t("hero.subtitle"),
+      cta: t("hero.cta"),
+      trustFree: t("hero.trustFree"),
+      trustResponse: t("hero.trustResponse"),
+    }),
+    [messages, currentLang]
+  );
 
   return {
     t: heroTranslations,
@@ -117,29 +122,32 @@ export function useHeroTranslations() {
 // Hook specifico per le Areas
 export function useAreasTranslations() {
   const { t, messages, currentLang } = useTranslations();
-  
-  const areasTranslations = useMemo(() => ({
-    title: t("areas.title"),
-    subtitle: t("areas.subtitle"),
-    criminal: {
-      title: t("areas.criminal.title"),
-      description: t("areas.criminal.description"),
-    },
-    civil: {
-      title: t("areas.civil.title"),
-      description: t("areas.civil.description"),
-    },
-    family: {
-      title: t("areas.family.title"),
-      description: t("areas.family.description"),
-    },
-    military: {
-      title: t("areas.military.title"),
-      description: t("areas.military.description"),
-    },
-    ctaText: t("areas.ctaText"),
-    ctaButton: t("areas.ctaButton"),
-  }), [messages, currentLang]);
+
+  const areasTranslations = useMemo(
+    () => ({
+      title: t("areas.title"),
+      subtitle: t("areas.subtitle"),
+      criminal: {
+        title: t("areas.criminal.title"),
+        description: t("areas.criminal.description"),
+      },
+      civil: {
+        title: t("areas.civil.title"),
+        description: t("areas.civil.description"),
+      },
+      family: {
+        title: t("areas.family.title"),
+        description: t("areas.family.description"),
+      },
+      military: {
+        title: t("areas.military.title"),
+        description: t("areas.military.description"),
+      },
+      ctaText: t("areas.ctaText"),
+      ctaButton: t("areas.ctaButton"),
+    }),
+    [messages, currentLang]
+  );
 
   return {
     t: areasTranslations,
