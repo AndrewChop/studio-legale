@@ -13,9 +13,22 @@
     "navigation": {
       "home": { "href": "/", "label": "Home" },
       "about": { "href": "/chi-siamo", "label": "About Us" },
-      "areas": { "href": "/aree-attivita", "label": "Areas of activity" },
+      "areas": {
+        "href": "/aree-attivita",
+        "label": "Areas of activity",
+        "hasDropdown": true
+      },
       "publications": { "href": "/pubblicazioni", "label": "Publications" },
       "contacts": { "href": "/contatti", "label": "Contact" }
+    },
+    "areasDropdown": {
+      "civil": { "href": "/area/diritto-civile", "label": "Civil Law" },
+      "criminal": { "href": "/area/diritto-penale", "label": "Criminal Law" },
+      "family": { "href": "/area/diritto-famiglia", "label": "Family Law" },
+      "condo": {
+        "href": "/area/diritto-condominiale",
+        "label": "Condominium Law"
+      }
     }
   },
   "hero": {

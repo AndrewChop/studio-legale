@@ -11,22 +11,22 @@ export default function ResponsiveAreas() {
     {
       ...t.civil,
       icon: "users",
-      href: "/servizi/diritto-civile",
+      href: "/area/diritto-civile",
     },
     {
       ...t.criminal,
       icon: "scale",
-      href: "/servizi/diritto-penale",
+      href: "/area/diritto-penale",
     },
     {
       ...t.family,
       icon: "heart",
-      href: "/servizi/diritto-famiglia",
+      href: "/area/diritto-famiglia",
     },
     {
       ...t.military,
       icon: "building",
-      href: "/servizi/diritto-condominiale",
+      href: "/area/diritto-condominiale",
     },
   ];
 

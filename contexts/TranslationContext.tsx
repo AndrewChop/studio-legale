@@ -108,13 +108,14 @@ export function useNavbarTranslations() {
       subtitle: t("navbar.subtitle"),
       home: t("navbar.home"),
       about: t("navbar.about"),
-      areas: t("navbar.services"),
+      areas: t("navbar.areas"),
       articles: t("navbar.articles"),
       contacts: t("navbar.contacts"),
       menu: t("navbar.menu"),
       changeLanguage: t("navbar.changeLanguage"),
       bookConsultation: t("navbar.bookConsultation"),
       navigation: messages.navbar?.navigation || {},
+      areasDropdown: messages.navbar?.areasDropdown || {},
     },
   };
 }
