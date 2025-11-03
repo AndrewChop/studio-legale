@@ -7,14 +7,16 @@
   "navbar": {
     "studioName": "Studio Legale",
     "subtitle": "Amaranto",
-    "home": "Home",
-    "about": "Chi Siamo",
-    "services": "Servizi",
-    "articles": "Articoli",
-    "contacts": "Contatti",
     "menu": "Menu",
     "changeLanguage": "Cambia lingua",
-    "bookConsultation": "Prenota Consulenza"
+    "bookConsultation": "Prenota Consulenza",
+    "navigation": {
+      "home": { "href": "/", "label": "Home" },
+      "about": { "href": "/chi-siamo", "label": "Chi siamo" },
+      "areas": { "href": "/aree-attivita", "label": "Aree di attività" },
+      "publications": { "href": "/pubblicazioni", "label": "Pubblicazioni" },
+      "contacts": { "href": "/contatti", "label": "Contatti" }
+    }
   },
   "hero": {
     "title": "Difendiamo i tuoi diritti con competenza e serietà",

@@ -7,14 +7,16 @@
   "navbar": {
     "studioName": "Law Firm",
     "subtitle": "Amaranto",
-    "home": "Home",
-    "about": "About Us",
-    "services": "Services",
-    "articles": "Articles",
-    "contacts": "Contacts",
     "menu": "Menu",
     "changeLanguage": "Change language",
-    "bookConsultation": "Book Consultation"
+    "bookConsultation": "Book Consultation",
+    "navigation": {
+      "home": { "href": "/", "label": "Home" },
+      "about": { "href": "/chi-siamo", "label": "About Us" },
+      "areas": { "href": "/aree-attivita", "label": "Areas of activity" },
+      "publications": { "href": "/pubblicazioni", "label": "Publications" },
+      "contacts": { "href": "/contatti", "label": "Contact" }
+    }
   },
   "hero": {
     "title": "We defend your rights with competence and seriousness",
