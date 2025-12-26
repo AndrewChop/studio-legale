@@ -24,7 +24,7 @@ export default function ResponsiveAreas() {
       href: "/area/diritto-famiglia",
     },
     {
-      ...t.military,
+      ...t.condo,
       icon: "building",
       href: "/area/diritto-condominiale",
     },
