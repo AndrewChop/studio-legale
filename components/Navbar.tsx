@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, Globe, Mail } from "lucide-react";
+import { Menu, Globe, Mail, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import {
   useNavbarTranslations,
@@ -28,11 +28,31 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 export default function ResponsiveNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
+  const [isAreasDropdownOpen, setIsAreasDropdownOpen] = useState(false);
+  const [isPublicationsDropdownOpen, setIsPublicationsDropdownOpen] =
+    useState(false);
   const { currentLang, setLanguage, t: navT } = useNavbarTranslations();
   const { t } = useTranslations();
 
   // Ottieni i navigation items dai JSON - con type safety
-  const navigationItems = Object.values(navT.navigation as Record<string, { href: string; label: string }>) || [];
+  const navigationItems =
+    Object.values(
+      navT.navigation as Record<
+        string,
+        { href: string; label: string; hasDropdown?: boolean }
+      >
+    ) || [];
+  const areasDropdownItems =
+    Object.values(
+      navT.areasDropdown as Record<string, { href: string; label: string }>
+    ) || [];
+  const publicationsDropdownItems =
+    Object.values(
+      navT.publicationsDropdown as Record<
+        string,
+        { href: string; label: string }
+      >
+    ) || [];
 
   const handleLinkClick = () => {
     setIsOpen(false);
@@ -41,7 +61,7 @@ export default function ResponsiveNavbar() {
   const handleLanguageChange = (lang: "it" | "en") => {
     console.log("Changing language to:", lang);
     setLanguage(lang);
-    setIsLangDropdownOpen(false); // Chiude il dropdown dopo la selezione
+    setIsLangDropdownOpen(false);
   };
 
   return (
@@ -112,15 +132,77 @@ export default function ResponsiveNavbar() {
               <div className="flex flex-row gap-6">
                 {/* Desktop Navigation Links - Hidden on Mobile/Tablet */}
                 <nav className="hidden lg:flex items-center space-x-8">
-                  {navigationItems.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="text-base font-bold text-accent-foreground hover:text-primary transition-colors"
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
+                  {navigationItems.map((item) => {
+                    // Se l'item ha dropdown (Aree di attività o Pubblicazioni)
+                    if (item.hasDropdown) {
+                      const isAreasItem = item.href.includes("aree-attivita");
+                      const isPublicationsItem =
+                        item.href.includes("pubblicazioni");
+                      const dropdownItems = isAreasItem
+                        ? areasDropdownItems
+                        : isPublicationsItem
+                        ? publicationsDropdownItems
+                        : [];
+                      const isDropdownOpen = isAreasItem
+                        ? isAreasDropdownOpen
+                        : isPublicationsItem
+                        ? isPublicationsDropdownOpen
+                        : false;
+                      const setDropdownOpen = isAreasItem
+                        ? setIsAreasDropdownOpen
+                        : isPublicationsItem
+                        ? setIsPublicationsDropdownOpen
+                        : () => {};
+
+                      return (
+                        <div
+                          key={item.href}
+                          className="relative group"
+                          onMouseEnter={() => setDropdownOpen(true)}
+                          onMouseLeave={() => setDropdownOpen(false)}
+                        >
+                          <button
+                            className="flex items-center gap-1 text-base font-bold text-accent-foreground hover:text-primary transition-colors cursor-pointer"
+                            onClick={() => setDropdownOpen(!isDropdownOpen)}
+                          >
+                            {item.label}
+                          </button>
+
+                          {/* Dropdown */}
+                          <div
+                            className={`absolute left-0 top-full mt-1 w-56 bg-white border shadow-lg rounded-md transition-all duration-200 z-[60] ${
+                              isDropdownOpen
+                                ? "opacity-100 visible"
+                                : "opacity-0 invisible"
+                            }`}
+                          >
+                            {dropdownItems.map((dropdownItem) => (
+                              <Link
+                                key={dropdownItem.href}
+                                href={dropdownItem.href}
+                                className="block px-4 py-3 hover:bg-gray-100 transition-colors"
+                              >
+                                <span className="text-sm font-medium text-gray-700 hover:text-primary">
+                                  {dropdownItem.label}
+                                </span>
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      );
+                    }
+
+                    // Item normale senza dropdown
+                    return (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className="text-base font-bold text-accent-foreground hover:text-primary transition-colors"
+                      >
+                        {item.label}
+                      </Link>
+                    );
+                  })}
                 </nav>
 
                 {/* Right Actions */}
@@ -213,16 +295,76 @@ export default function ResponsiveNavbar() {
                           </div>
                         </SheetHeader>
                         <nav className="flex flex-col space-y-1">
-                          {navigationItems.map((item) => (
-                            <Link
-                              key={item.href}
-                              href={item.href}
-                              onClick={() => setIsOpen(false)}
-                              className="flex items-center px-4 py-3 text-base font-bold text-accent-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors"
-                            >
-                              {item.label}
-                            </Link>
-                          ))}
+                          {navigationItems.map((item) => {
+                            // Se l'item ha dropdown (Aree di attività o Pubblicazioni) nel mobile
+                            if (item.hasDropdown) {
+                              const isAreasItem =
+                                item.href.includes("aree-attivita");
+                              const isPublicationsItem =
+                                item.href.includes("pubblicazioni");
+                              const dropdownItems = isAreasItem
+                                ? areasDropdownItems
+                                : isPublicationsItem
+                                ? publicationsDropdownItems
+                                : [];
+                              const isDropdownOpen = isAreasItem
+                                ? isAreasDropdownOpen
+                                : isPublicationsItem
+                                ? isPublicationsDropdownOpen
+                                : false;
+                              const setDropdownOpen = isAreasItem
+                                ? setIsAreasDropdownOpen
+                                : isPublicationsItem
+                                ? setIsPublicationsDropdownOpen
+                                : () => {};
+
+                              return (
+                                <div key={item.href} className="flex flex-col">
+                                  <button
+                                    onClick={() =>
+                                      setDropdownOpen(!isDropdownOpen)
+                                    }
+                                    className="flex items-center justify-between px-4 py-3 text-base font-bold text-accent-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors"
+                                  >
+                                    <span>{item.label}</span>
+                                    <ChevronDown
+                                      className={`h-4 w-4 transition-transform ${
+                                        isDropdownOpen ? "rotate-180" : ""
+                                      }`}
+                                    />
+                                  </button>
+
+                                  {/* Sottomenu mobile */}
+                                  {isDropdownOpen && (
+                                    <div className="ml-4 flex flex-col space-y-1">
+                                      {dropdownItems.map((dropdownItem) => (
+                                        <Link
+                                          key={dropdownItem.href}
+                                          href={dropdownItem.href}
+                                          onClick={() => setIsOpen(false)}
+                                          className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors"
+                                        >
+                                          {dropdownItem.label}
+                                        </Link>
+                                      ))}
+                                    </div>
+                                  )}
+                                </div>
+                              );
+                            }
+
+                            // Item normale senza dropdown nel mobile
+                            return (
+                              <Link
+                                key={item.href}
+                                href={item.href}
+                                onClick={() => setIsOpen(false)}
+                                className="flex items-center px-4 py-3 text-base font-bold text-accent-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors"
+                              >
+                                {item.label}
+                              </Link>
+                            );
+                          })}
                         </nav>
                       </SheetContent>
                     </Sheet>
