@@ -133,9 +133,9 @@ export function useAreasTranslations() {
         title: t("areas.family.title"),
         description: t("areas.family.description"),
       },
-      military: {
-        title: t("areas.military.title"),
-        description: t("areas.military.description"),
+      condo: {
+        title: t("areas.condo.title"),
+        description: t("areas.condo.description"),
       },
       ctaText: t("areas.ctaText"),
       ctaButton: t("areas.ctaButton"),

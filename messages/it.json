@@ -18,7 +18,11 @@
         "label": "Aree di attività",
         "hasDropdown": true
       },
-      "publications": { "href": "/pubblicazioni", "label": "Pubblicazioni" },
+      "publications": {
+        "href": "/pubblicazioni",
+        "label": "Pubblicazioni",
+        "hasDropdown": true
+      },
       "contacts": { "href": "/contatti", "label": "Contatti" }
     },
     "areasDropdown": {
@@ -32,52 +36,73 @@
         "href": "/area/diritto-condominiale",
         "label": "Diritto Condominiale"
       }
+    },
+    "publicationsDropdown": {
+      "articles": {
+        "href": "/pubblicazioni/articoli-giuridici",
+        "label": "Articoli Giuridici"
+      },
+      "contributions": {
+        "href": "/pubblicazioni/contributi-testate",
+        "label": "Contributi su Testate Nazionali"
+      }
     }
   },
   "hero": {
-    "title": "Difendiamo i tuoi diritti con competenza e serietà",
-    "subtitle": "Lo Studio Legale Amaranto offre consulenza e assistenza legale in ambito civile e penale.",
+    "title": "Tutela dei tuoi diritti con competenza, rigore e riservatezza.",
+    "subtitle": "Lo Studio Legale Amaranto offre consulenza e assistenza giudiziale e stragiudiziale in ambito civile, penale e di famiglia.",
     "cta": "Prenota una consulenza",
-    "trustFree": "Consulenza in sede e online",
-    "trustResponse": "Risposta entro 24h"
+    "trustFree": "Consulenza in presenza e da remoto",
+    "trustResponse": "Riscontro entro 24 ore"
   },
   "areas": {
     "title": "Aree di Attività",
-    "subtitle": "Competenza ed esperienza in diversi settori del diritto",
+    "subtitle": "Assistenza legale specializzata nei principali settori del diritto",
     "civil": {
       "title": "Diritto Civile",
-      "description": "Contratti, proprietà, risarcimenti, successioni. Consulenza per questioni patrimoniali e personali."
+      "description": "Contrattualistica, responsabilità civile, proprietà, successioni, recupero crediti e tutela dei diritti patrimoniali. Lo Studio offre un’assistenza completa nella gestione di controversie e nella prevenzione del contenzioso."
     },
     "criminal": {
       "title": "Diritto Penale",
-      "description": "Difesa in procedimenti penali, reati comuni e militari. Assistenza legale completa per la tutela dei tuoi diritti."
+      "description": "Difesa tecnica in procedimenti penali ordinari e militari, tutela delle garanzie dell’imputato e della persona offesa, consulenza nelle fasi investigative e dibattimentali."
     },
     "family": {
       "title": "Diritto di Famiglia",
-      "description": "Separazioni, divorzi, contratti di convivenza, tutela minori e affido. Supporto legale in momenti delicati della vita familiare."
+      "description": "Separazioni, divorzi, regolamentazione dell’affido e dei rapporti economici, contratti di convivenza, tutela dei minori. Supporto legale in situazioni familiari complesse e ad elevato impatto personale."
     },
-    "military": {
+    "condo": {
       "title": "Diritto Condominiale",
-      "description": "Tutela dei diritti dei condomini e gestione delle controversie condominiali. Assistenza legale per questioni di proprietà e regolamenti."
+      "description": "Gestione delle controversie condominiali, impugnazione delibere assembleari, responsabilità dell’amministratore, parti comuni e diritti dei singoli condomini."
     },
     "ctaText": "Hai bisogno di assistenza legale?",
     "ctaButton": "Contattaci Ora"
   },
   "presentation": {
     "title": "Chi siamo",
-    "subtitle": "Esperienza e professionalità al vostro servizio",
-    "description": "Lo Studio Legale Amaranto è specializzato in diritto civile e familiare. Attivo su tutela del diritto, separazioni e mediazione.",
-    "cta": "Scopri di più"
+    "subtitle": "Professionalità ed esperienza per la tutela dei tuoi diritti",
+    "description": "Lo Studio Legale Amaranto presta assistenza in ambito civile, penale e familiare. L’approccio unisce competenza giuridica, ascolto attento delle esigenze del cliente e una gestione rigorosa del contenzioso, con particolare attenzione alla tutela dei diritti della persona e della famiglia.",
+    "cta": "Scopri il nostro team →",
+    "marzia": {
+      "name": "Avv. Marzia Amaranto",
+      "role": "Avvocato fondatore e Titolare",
+      "description": "Specializzata in diritto civile e familiare. Attiva su tutela del minore, separazioni e mediazione."
+    },
+    "antonio": {
+      "name": "Avv. Antonio Amaranto",
+      "role": "Of Counsel",
+      "description": "Esperto in diritto penale e amministrativo militare. Oltre vent'anni di esperienza nella difesa tecnica."
+    }
   },
   "articles": {
-    "title": "Articoli Recenti",
+    "title": "Ultimi Articoli",
     "subtitle": "Approfondimenti e aggiornamenti legali",
-    "readMore": "Leggi tutto",
-    "viewAll": "Vedi tutti gli articoli"
+    "readMore": "Leggi tutto →",
+    "viewAll": "Vai a tutti gli articoli →"
   },
   "contacts": {
     "title": "Contattaci",
-    "subtitle": "Siamo qui per aiutarti",
+    "subtitle": "Lo Studio è a disposizione per consulenze e assistenza legale su appuntamento.",
+    "cta": "Prenota una consulenza",
     "name": "Nome",
     "email": "Email",
     "phone": "Telefono",
@@ -92,13 +117,15 @@
   },
   "footer": {
     "studioName": "Studio Legale Amaranto",
+    "copyright": "Tutti i diritti riservati.",
+    "privacy": "Privacy Policy",
+    "contacts": "Contatti",
+    "adminArea": "Area Amministratore",
     "description": "Consulenza legale professionale in diritto civile, penale e amministrativo militare.",
     "quickLinks": "Link Rapidi",
     "legalInfo": "Informazioni Legali",
-    "privacy": "Privacy Policy",
     "terms": "Termini di Servizio",
-    "contact": "Contatti",
-    "copyright": "© 2023 Studio Legale Amaranto. Tutti i diritti riservati."
+    "contact": "Contatti"
   },
   "common": {
     "loading": "Caricamento...",

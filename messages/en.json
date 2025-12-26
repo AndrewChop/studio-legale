@@ -1,6 +1,6 @@
 {
   "topbar": {
-    "message": "Your legal defense starts here. Experience and expertise at your service.",
+    "message": "Your legal protection starts here. Expertise and commitment at your service.",
     "phone": "+39 338 347 0581",
     "email": "studiolegaleamaranto@gmail.com"
   },
@@ -9,17 +9,21 @@
     "subtitle": "Amaranto",
     "menu": "Menu",
     "changeLanguage": "Change language",
-    "bookConsultation": "Book Consultation",
+    "bookConsultation": "Schedule a Consultation",
     "navigation": {
       "home": { "href": "/", "label": "Home" },
-      "about": { "href": "/chi-siamo", "label": "About Us" },
+      "about": { "href": "/chi-siamo", "label": "About the Firm" },
       "areas": {
         "href": "/aree-attivita",
-        "label": "Areas of activity",
+        "label": "Practice Areas",
         "hasDropdown": true
       },
-      "publications": { "href": "/pubblicazioni", "label": "Publications" },
-      "contacts": { "href": "/contatti", "label": "Contact" }
+      "publications": {
+        "href": "/pubblicazioni",
+        "label": "Publications",
+        "hasDropdown": true
+      },
+      "contacts": { "href": "/contatti", "label": "Contact Us" }
     },
     "areasDropdown": {
       "civil": { "href": "/area/diritto-civile", "label": "Civil Law" },
@@ -29,59 +33,80 @@
         "href": "/area/diritto-condominiale",
         "label": "Condominium Law"
       }
+    },
+    "publicationsDropdown": {
+      "articles": {
+        "href": "/pubblicazioni/articoli-giuridici",
+        "label": "Legal Articles"
+      },
+      "contributions": {
+        "href": "/pubblicazioni/contributi-testate",
+        "label": "Contributions to National Press"
+      }
     }
   },
   "hero": {
-    "title": "We defend your rights with competence and seriousness",
-    "subtitle": "Amaranto Law Firm offers legal consultation and assistance in civil and criminal law.",
-    "cta": "Book a consultation",
-    "trustFree": "On-site and online consultation",
-    "trustResponse": "Response within 24h"
+    "title": "We protect your rights with competence and professionalism",
+    "subtitle": "The Amaranto Law Firm provides legal advice and assistance in civil and criminal law.",
+    "cta": "Schedule a Consultation",
+    "trustFree": "In-person and online legal consultations",
+    "trustResponse": "Response within 24 hours"
   },
   "areas": {
     "title": "Practice Areas",
-    "subtitle": "Expertise and experience across different areas of law",
+    "subtitle": "Experience and expertise across key areas of law",
     "civil": {
       "title": "Civil Law",
-      "description": "Contracts, property, compensation, succession. Consultation for patrimonial and personal matters."
+      "description": "Contracts, property, liability, inheritance. Legal advice for personal and financial matters."
     },
     "criminal": {
       "title": "Criminal Law",
-      "description": "Defense in criminal proceedings, common and military crimes. Complete legal assistance for the protection of your rights."
+      "description": "Defense in criminal proceedings, including ordinary and military offences. Complete legal representation for the protection of your rights."
     },
     "family": {
       "title": "Family Law",
-      "description": "Separations, divorces, cohabitation agreements, child protection and custody. Legal support in delicate moments of family life."
+      "description": "Separation, divorce, cohabitation agreements, child protection and custody. Legal support through sensitive family matters."
     },
-    "military": {
+    "condo": {
       "title": "Condominium Law",
-      "description": "Protection of condominium rights and management of condominium disputes. Legal assistance for property issues and regulations."
+      "description": "Protection of condominium rights and management of condominium disputes. Legal assistance concerning property regulations."
     },
     "ctaText": "Do you need legal assistance?",
-    "ctaButton": "Contact Us Now"
+    "ctaButton": "Contact Us"
   },
   "presentation": {
-    "title": "About us",
+    "title": "About the Firm",
     "subtitle": "Experience and professionalism at your service",
-    "description": "Amaranto Law Firm specializes in civil and family law. Active in rights protection, separations and mediation.",
-    "cta": "Learn more"
+    "description": "The Amaranto Law Firm specialises in civil and family law, with a strong focus on rights protection, separation procedures and mediation.",
+    "cta": "Learn more about our team →",
+    "marzia": {
+      "name": "Attorney Marzia Amaranto",
+      "role": "Founder and Managing Attorney",
+      "description": "Specialised in civil and family law. Experienced in child protection, separation procedures and mediation."
+    },
+    "antonio": {
+      "name": "Attorney Antonio Amaranto",
+      "role": "Of Counsel",
+      "description": "Expert in criminal and military administrative law. Over 20 years of experience in legal defence."
+    }
   },
   "articles": {
-    "title": "Recent Articles",
-    "subtitle": "Legal insights and updates",
-    "readMore": "Read more",
-    "viewAll": "View all articles"
+    "title": "Latest Legal Insights",
+    "subtitle": "Analyses, commentary and updates",
+    "readMore": "Read more →",
+    "viewAll": "View all articles →"
   },
   "contacts": {
     "title": "Contact Us",
-    "subtitle": "We're here to help you",
+    "subtitle": "We are available for legal consultations by appointment. Do not hesitate to reach out.",
+    "cta": "Schedule a Consultation",
     "name": "Name",
     "email": "Email",
     "phone": "Phone",
     "message": "Message",
     "send": "Send message",
     "address": "Address",
-    "workingHours": "Working Hours",
+    "workingHours": "Office Hours",
     "monday": "Monday - Friday",
     "hours": "9:00 AM - 6:00 PM",
     "saturday": "Saturday",
@@ -89,17 +114,19 @@
   },
   "footer": {
     "studioName": "Amaranto Law Firm",
-    "description": "Professional legal consulting in civil, criminal and military administrative law.",
+    "copyright": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "contacts": "Contact",
+    "adminArea": "Administrator Area",
+    "description": "Professional legal consultancy in civil, criminal and military administrative law.",
     "quickLinks": "Quick Links",
     "legalInfo": "Legal Information",
-    "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "contact": "Contact",
-    "copyright": "© 2023 Amaranto Law Firm. All rights reserved."
+    "contact": "Contact"
   },
   "common": {
     "loading": "Loading...",
-    "error": "An error occurred",
+    "error": "An error has occurred",
     "success": "Operation completed successfully",
     "confirm": "Confirm",
     "cancel": "Cancel",
@@ -111,10 +138,10 @@
     "previous": "Previous"
   },
   "forms": {
-    "required": "Required field",
-    "invalidEmail": "Invalid email",
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address",
     "invalidPhone": "Invalid phone number",
     "messageSent": "Message sent successfully",
-    "messageError": "Error sending message"
+    "messageError": "An error occurred while sending the message"
   }
 }

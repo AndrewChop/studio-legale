@@ -106,16 +106,12 @@ export function useNavbarTranslations() {
     t: {
       studioName: t("navbar.studioName"),
       subtitle: t("navbar.subtitle"),
-      home: t("navbar.home"),
-      about: t("navbar.about"),
-      areas: t("navbar.areas"),
-      articles: t("navbar.articles"),
-      contacts: t("navbar.contacts"),
       menu: t("navbar.menu"),
       changeLanguage: t("navbar.changeLanguage"),
       bookConsultation: t("navbar.bookConsultation"),
       navigation: messages.navbar?.navigation || {},
       areasDropdown: messages.navbar?.areasDropdown || {},
+      publicationsDropdown: messages.navbar?.publicationsDropdown || {},
     },
   };
 }
@@ -153,12 +149,71 @@ export function useAreasTranslations() {
         title: t("areas.family.title"),
         description: t("areas.family.description"),
       },
-      military: {
-        title: t("areas.military.title"),
-        description: t("areas.military.description"),
+      condo: {
+        title: t("areas.condo.title"),
+        description: t("areas.condo.description"),
       },
       ctaText: t("areas.ctaText"),
       ctaButton: t("areas.ctaButton"),
+    },
+  };
+}
+
+export function useContactsTranslations() {
+  const { t } = useTranslations();
+
+  return {
+    t: {
+      title: t("contacts.title"),
+      subtitle: t("contacts.subtitle"),
+      cta: t("contacts.cta"),
+    },
+  };
+}
+
+export function usePresentationTranslations() {
+  const { t } = useTranslations();
+
+  return {
+    t: {
+      title: t("presentation.title"),
+      cta: t("presentation.cta"),
+      marzia: {
+        name: t("presentation.marzia.name"),
+        role: t("presentation.marzia.role"),
+        description: t("presentation.marzia.description"),
+      },
+      antonio: {
+        name: t("presentation.antonio.name"),
+        role: t("presentation.antonio.role"),
+        description: t("presentation.antonio.description"),
+      },
+    },
+  };
+}
+
+export function useArticlesTranslations() {
+  const { t } = useTranslations();
+
+  return {
+    t: {
+      title: t("articles.title"),
+      readMore: t("articles.readMore"),
+      viewAll: t("articles.viewAll"),
+    },
+  };
+}
+
+export function useFooterTranslations() {
+  const { t } = useTranslations();
+
+  return {
+    t: {
+      studioName: t("footer.studioName"),
+      copyright: t("footer.copyright"),
+      privacy: t("footer.privacy"),
+      contacts: t("footer.contacts"),
+      adminArea: t("footer.adminArea"),
     },
   };
 }
