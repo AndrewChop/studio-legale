@@ -16,7 +16,7 @@ export default function ResponsiveHero() {
         </h1>
 
         {/* Subtitle - Responsive */}
-        <p className="text-base sm:text-lg text-muted-foreground max-w-xl lg:max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed px-2">
+        <p className="text-base sm:text-lg text-muted-foreground max-w-xl lg:max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed px-4">
           {t.subtitle}
         </p>
 
@@ -24,7 +24,7 @@ export default function ResponsiveHero() {
         <Link href="/contatti">
           <Button
             size="lg"
-            className="w-full sm:w-auto min-h-[48px] px-6 sm:px-8 py-3 text-base sm:text-lg font-medium bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-colors shadow-lg hover:shadow-xl"
+            className="w-fit sm:w-auto min-h-[48px] sm:px-4 py-3 text-base sm:text-lg font-medium bg-secondary text-secondary-foreground hover:bg-secondary/70 transition-colors shadow-lg hover:shadow-xl"
           >
             {t.cta}
           </Button>
