@@ -8,7 +8,7 @@ export default function ChiSiamoPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section - Professional */}
+      {/* Hero Section - Professional - DA AGGIUNGERE SUCCESSIVAMENTE IMMAGINE DI LIBRI AL POSTO DI GRADIENTE */}
       <section className="bg-gradient-to-br from-primary to-secondary/10 text-muted-foreground py-14">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
