@@ -217,3 +217,33 @@ export function useFooterTranslations() {
     },
   };
 }
+
+export function useAboutPageTranslations() {
+  const { t } = useTranslations();
+
+  return {
+    t: {
+      title: t("aboutPage.title"),
+      subtitle: t("aboutPage.subtitle"),
+      expertiseLabel: t("aboutPage.expertiseLabel"),
+      marzia: {
+        name: t("aboutPage.marzia.name"),
+        role: t("aboutPage.marzia.role"),
+        education: t("aboutPage.marzia.education"),
+        expertise: t("aboutPage.marzia.expertise"),
+        experience: t("aboutPage.marzia.experience"),
+        publications: t("aboutPage.marzia.publications"),
+        qualifications: t("aboutPage.marzia.qualifications"),
+      },
+      antonio: {
+        name: t("aboutPage.antonio.name"),
+        role: t("aboutPage.antonio.role"),
+        education: t("aboutPage.antonio.education"),
+        expertise: t("aboutPage.antonio.expertise"),
+        experience: t("aboutPage.antonio.experience"),
+        recognition: t("aboutPage.antonio.recognition"),
+        qualifications: t("aboutPage.antonio.qualifications"),
+      },
+    },
+  };
+}
