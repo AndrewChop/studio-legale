@@ -1,77 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  /* Primary - Amber/Gold (Brand color) */
   --primary: 45 85% 55%;
-  /* Base amber */
   --primary-foreground: 0 0% 100%;
-  /* White text on primary */
-
-  /* Secondary - Navy/Dark Blue (Professional) */
   --secondary: 215 47% 13%;
-  /* Dark navy */
   --secondary-foreground: 0 0% 100%;
-  /* White text on secondary */
-
-  /* Accent - Light Blue (Subtle highlights) */
   --accent: 200 31% 80%;
-  /* Light blue */
   --accent-foreground: 215 47% 13%;
-  /* Navy text on accent */
-
-  /* Muted - Gray tones */
   --muted: 220 13% 91%;
-  /* Light gray background */
   --muted-foreground: 220 9% 46%;
-  /* Medium gray text */
-
-  /* Background colors */
   --background: 0 0% 100%;
-  /* White */
   --foreground: 220 39% 11%;
-  /* Dark gray text */
-
-  /* Card colors */
   --card: 0 0% 100%;
-  /* White card background */
   --card-foreground: 220 39% 11%;
-  /* Dark text on cards */
-
-  /* Popover colors */
   --popover: 0 0% 100%;
-  /* White popover */
   --popover-foreground: 220 39% 11%;
-  /* Dark text in popover */
-
-  /* Border colors */
   --border: 220 13% 83%;
-  /* Light gray border */
   --input: 220 13% 83%;
-  /* Input border */
-
-  /* Ring colors (focus states) */
   --ring: 45 85% 55%;
-  /* Primary color for focus rings */
-
-  /* Destructive - Error states */
   --destructive: 0 84% 60%;
-  /* Red */
   --destructive-foreground: 0 0% 100%;
-  /* White text on red */
-
-  /* Success states */
   --success: 142 76% 36%;
-  /* Green */
   --success-foreground: 0 0% 100%;
-  /* White text on green */
-
-  /* Warning states */
   --warning: 38 92% 50%;
-  /* Orange */
   --warning-foreground: 0 0% 100%;
-  /* White text on orange */
 }
 
 @layer utilities {
@@ -100,10 +56,58 @@
     background-color: hsl(var(--secondary));
     color: hsl(var(--secondary-foreground));
   }
+
+  /* Custom border utilities for language dropdown */
+  .border-l-3 {
+    border-left-width: 3px;
+  }
+
+  .border-l-primary {
+    border-left-color: hsl(var(--primary));
+  }
+
+  .border-l-transparent {
+    border-left-color: transparent;
+  }
 }
 
 body {
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
-  font-family: theme('fontFamily.sans');
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* Offset for unified fixed navbar (top bar + main navbar ~114px) */
+  padding-top: 114px;
+}
+
+/* Professional Typography for Legal Studio */
+h1,
+h2,
+h3,
+.title-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  line-height: 1.2;
+}
+
+/* Text weight utilities for legal content */
+.font-legal-medium {
+  font-weight: 500;
+}
+
+.font-legal-semibold {
+  font-weight: 600;
+}
+
+.font-legal-bold {
+  font-weight: 700;
+}
+
+/* Professional text styles */
+.text-professional {
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.01em;
 }

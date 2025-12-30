@@ -1,87 +1,46 @@
 "use client";
 
-import { useState } from "react";
-import { Scale, Users, Heart, Shield } from "lucide-react";
+import Link from "next/link";
+import { Scale, Users, Heart, Building } from "lucide-react";
+import { useAreasTranslations } from "../contexts/TranslationContext";
 
 export default function ResponsiveAreas() {
-  const [currentLang, setCurrentLang] = useState<"it" | "en">("it");
+  const { t } = useAreasTranslations();
 
-  const translations = {
-    it: {
-      title: "Aree di Attività",
-      subtitle: "Competenza ed esperienza in diversi settori del diritto",
-      areas: [
-        {
-          title: "Diritto Penale",
-          description:
-            "Difesa in procedimenti penali, reati comuni e militari. Assistenza legale completa per la tutela dei tuoi diritti.",
-          icon: "scale",
-        },
-        {
-          title: "Diritto Civile",
-          description:
-            "Contratti, proprietà, risarcimenti, successioni. Consulenza per questioni patrimoniali e personali.",
-          icon: "users",
-        },
-        {
-          title: "Diritto di Famiglia",
-          description:
-            "Separazioni, divorzi, tutela minori e affido. Supporto legale in momenti delicati della vita familiare.",
-          icon: "heart",
-        },
-        {
-          title: "Amministrativo Militare",
-          description:
-            "Tutela dei diritti del personale militare e ricorsi. Specializzazione nel diritto amministrativo militare.",
-          icon: "shield",
-        },
-      ],
+  const areas = [
+    {
+      ...t.civil,
+      icon: "users",
+      href: "/area/diritto-civile",
     },
-    en: {
-      title: "Practice Areas",
-      subtitle: "Expertise and experience across different areas of law",
-      areas: [
-        {
-          title: "Criminal Law",
-          description:
-            "Defense in criminal proceedings, common and military crimes. Complete legal assistance for the protection of your rights.",
-          icon: "scale",
-        },
-        {
-          title: "Civil Law",
-          description:
-            "Contracts, property, compensation, succession. Consultation for patrimonial and personal matters.",
-          icon: "users",
-        },
-        {
-          title: "Family Law",
-          description:
-            "Separations, divorces, child protection and custody. Legal support in delicate moments of family life.",
-          icon: "heart",
-        },
-        {
-          title: "Military Administrative",
-          description:
-            "Protection of military personnel rights and appeals. Specialization in military administrative law.",
-          icon: "shield",
-        },
-      ],
+    {
+      ...t.criminal,
+      icon: "scale",
+      href: "/area/diritto-penale",
     },
-  };
-
-  const t = translations[currentLang];
+    {
+      ...t.family,
+      icon: "heart",
+      href: "/area/diritto-famiglia",
+    },
+    {
+      ...t.condo,
+      icon: "building",
+      href: "/area/diritto-condominiale",
+    },
+  ];
 
   const getIcon = (iconName: string) => {
     const iconClass = "w-8 h-8 md:w-10 md:h-10 text-primary";
     switch (iconName) {
-      case "scale":
-        return <Scale className={iconClass} />;
       case "users":
         return <Users className={iconClass} />;
+      case "scale":
+        return <Scale className={iconClass} />;
       case "heart":
         return <Heart className={iconClass} />;
-      case "shield":
-        return <Shield className={iconClass} />;
+      case "building":
+        return <Building className={iconClass} />;
       default:
         return <Scale className={iconClass} />;
     }
@@ -102,10 +61,11 @@ export default function ResponsiveAreas() {
 
         {/* Areas Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
-          {t.areas.map((area, index) => (
-            <div
+          {areas.map((area, index) => (
+            <Link
               key={area.title}
-              className="bg-card rounded-xl shadow-sm border border-border p-6 md:p-8 hover:shadow-md hover:border-primary/20 transition-all duration-300 group"
+              href={area.href}
+              className="block bg-card rounded-xl shadow-sm border border-border p-6 md:p-8 hover:shadow-md hover:border-primary/20 transition-all duration-300 group cursor-pointer"
             >
               {/* Icon and Title */}
               <div className="flex items-start space-x-4 mb-4">
@@ -113,7 +73,7 @@ export default function ResponsiveAreas() {
                   {getIcon(area.icon)}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-lg md:text-xl font-semibold text-card-foreground mb-2 leading-tight">
+                  <h3 className="text-lg md:text-xl font-semibold text-card-foreground mb-2 leading-tight group-hover:text-primary transition-colors duration-300">
                     {area.title}
                   </h3>
                 </div>
@@ -125,26 +85,24 @@ export default function ResponsiveAreas() {
               </p>
 
               {/* Visual indicator */}
-              <div className="mt-4 pt-4 border-t border-gray-100">
-                <div className="w-12 h-1 bg-gradient-to-r from-primary/60 to-primary rounded-full"></div>
+              <div className="mt-4 pt-4 border-t border-border">
+                <div className="w-12 h-1 bg-gradient-to-r from-primary/60 to-primary rounded-full group-hover:from-primary group-hover:to-primary/80 transition-all duration-300"></div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
         {/* Call to Action */}
         <div className="text-center mt-8 md:mt-12 lg:mt-16">
           <p className="text-sm md:text-base text-muted-foreground mb-4">
-            {currentLang === "it"
-              ? "Hai bisogno di assistenza legale?"
-              : "Do you need legal assistance?"}
+            {t.ctaText}
           </p>
-          <a
+          <Link
             href="/contatti"
             className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors duration-300 text-sm md:text-base"
           >
-            {currentLang === "it" ? "Contattaci Ora" : "Contact Us Now"}
-          </a>
+            {t.ctaButton}
+          </Link>
         </div>
       </div>
     </section>
