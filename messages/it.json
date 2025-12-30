@@ -60,27 +60,139 @@
     "subtitle": "Assistenza legale specializzata nei principali settori del diritto",
     "civil": {
       "title": "Diritto Civile",
-      "description": "Contrattualistica, responsabilità civile, proprietà, successioni, recupero crediti e tutela dei diritti patrimoniali. Lo Studio offre un’assistenza completa nella gestione di controversie e nella prevenzione del contenzioso."
+      "description": "Contrattualistica, responsabilità civile, proprietà, successioni, recupero crediti e tutela dei diritti patrimoniali. Lo Studio offre un'assistenza completa nella gestione di controversie e nella prevenzione del contenzioso.",
+      "overview": "Il Diritto Civile riguarda le questioni che interessano la vita di tutti i giorni: quando hai una controversia con un fornitore, quando acquisti una casa, quando ereditare beni familiari o quando subisci un danno. Non si tratta solo di andare in tribunale, ma spesso di trovare soluzioni pratiche prima che la situazione diventi una causa vera e propria.\n\nNello Studio Legale Amaranto, lavoriamo per proteggere i tuoi diritti in modo preventivo. Che tu debba redigere un contratto importante, risolvere una controversia con un'azienda, recuperare una somma dovuta o gestire una successione, il nostro obiettivo è offrirti soluzioni chiare, comprensibili e nel tuo interesse. Sappiamo che le questioni legali possono sembrare complicate: per questo ti spieghiamo tutto in modo semplice, senza inutili tecnicismi, aiutandoti a capire le tue opzioni e le possibili conseguenze prima di decidere.",
+      "services": [
+        "Redazione e revisione di contratti (compravendita, locazioni, prestiti)",
+        "Pratiche di recupero crediti e azioni esecutive",
+        "Consulenza su questioni di proprietà e diritti reali",
+        "Successioni ereditarie e gestione eredità",
+        "Risarcimento danni per incidenti stradali e responsabilità civile",
+        "Mediazione e risoluzione stragiudiziale di controversie",
+        "Responsabilità medica (assistenza in caso di negligenza sanitaria)",
+        "Questioni condominiali e diritti di proprietà"
+      ],
+      "handledBy": "Avv. Marzia Amaranto",
+      "faqs": [
+        {
+          "question": "Quanto tempo ci vuole per risolvere una controversia civile?",
+          "answer": "Dipende molto dal tipo di controversia. Se riusciamo a risolvere tutto in modo amichevole (fuori dal tribunale), può bastare qualche mese. Se invece serve un processo in tribunale, di solito ci vogliono 2-3 anni per il primo grado, con la possibilità di appello dopo. Ti aiutiamo a capire fin da subito quali sono i tempi realistici del tuo caso."
+        },
+        {
+          "question": "È sempre necessario andare in tribunale?",
+          "answer": "No, anzi spesso è meglio evitarlo. Ci sono molti modi per risolvere le dispute: mediazione, accordi diretti, lettere formali. Queste strade sono spesso più veloci, meno costose e meno stressanti che ricorrere al tribunale. Valutiamo con te quale opzione sia migliore."
+        },
+        {
+          "question": "Quali documenti mi servono per un'azione legale?",
+          "answer": "Dipende dal caso, ma in genere ti servono: contratti o comunicazioni scritte, documenti che provano il danno, e qualsiasi prova del fatto che l'altra parte ha sbagliato. Ti aiutiamo a capire cosa raccogliere e come organizzare la documentazione."
+        }
+      ]
     },
     "criminal": {
       "title": "Diritto Penale",
-      "description": "Difesa tecnica in procedimenti penali ordinari e militari, tutela delle garanzie dell’imputato e della persona offesa, consulenza nelle fasi investigative e dibattimentali."
+      "description": "Difesa tecnica in procedimenti penali ordinari e militari, tutela delle garanzie dell'imputato e della persona offesa, consulenza nelle fasi investigative e dibattimentali.",
+      "overview": "Venire accusati di un reato è una situazione grave che può cambiarti la vita. Sia che tu sia stato fermato dalla polizia, che tu abbia ricevuto una comunicazione di reato o che semplicemente sospetti di trovarti in una situazione legale difficile, è fondamentale avere dalla tua parte un avvocato esperto che conosce come funziona il processo penale.\n\nNel nostro studio, la difesa penale non è solo una questione legale, è una questione personale. Sappiamo che una persona accusata ha diritti che devono essere protetti fin dal primo momento. Che la situazione coinvolga reati ordinari (furti, lesioni, frodi) o materie più specializzate come il diritto penale militare, il nostro lavoro è garantire che le tue garanzie legali siano rispettate, che tu sia informato su ogni passo del processo e che la tua posizione sia difesa nel modo più efficace possibile.",
+      "services": [
+        "Difesa in fase di indagini preliminari (quando la polizia sta ancora indagando)",
+        "Assistenza in arresto e custodia cautelare",
+        "Difesa nel processo penale davanti al giudice",
+        "Processi con rito abbreviato (più veloce e con riduzioni di pena)",
+        "Difesa in processi per reati economici e frodi",
+        "Diritto penale militare (per personale militare)",
+        "Ricorsi in Appello e in Cassazione",
+        "Protezione della persona offesa (se sei vittima di un reato)"
+      ],
+      "handledBy": "Avv. Antonio Amaranto",
+      "faqs": [
+        {
+          "question": "Mi hanno fermato: cosa devo fare?",
+          "answer": "Innanzitutto, hai diritto a un avvocato e il diritto di stare zitto fino a quando non ti assiste il tuo legale. Non firmare nulla senza aver consultato un avvocato. Contattaci immediatamente: saremo al tuo fianco in ogni fase, dalla polizia al tribunale. Il primo momento è cruciale per proteggere i tuoi diritti."
+        },
+        {
+          "question": "Cosa differenzia un processo abbreviato da uno ordinario?",
+          "answer": "Il processo abbreviato è più veloce: il giudice decide sulla base della documentazione senza lunghe udienze. Lo svantaggio è che ha meno prove rispetto a un processo ordinario. Però, generalmente il giudice applica una riduzione di pena (sconto del 25-30%). Valutiamo insieme se conviene nel tuo caso."
+        },
+        {
+          "question": "Posso patteggiare e risolvere la causa in modo rapido?",
+          "answer": "Sì, attraverso il patteggiamento si può accordarsi su una pena senza processo. È una soluzione veloce che consente di evitare il processo e spesso di avere una pena ridotta. Non è ammesso in tutti i casi, ma lo valutiamo attentamente con te."
+        }
+      ]
     },
     "family": {
       "title": "Diritto di Famiglia",
-      "description": "Separazioni, divorzi, regolamentazione dell’affido e dei rapporti economici, contratti di convivenza, tutela dei minori. Supporto legale in situazioni familiari complesse e ad elevato impatto personale."
+      "description": "Separazioni, divorzi, regolamentazione dell'affido e dei rapporti economici, contratti di convivenza, tutela dei minori. Supporto legale in situazioni familiari complesse e ad elevato impatto personale.",
+      "overview": "Le questioni familiari sono fra le più delicate e importanti della vita. Una separazione o un divorzio non è mai facile, specialmente quando ci sono figli. Le decisioni che prendi in questa fase – su dove vivranno i figli, quanto mantenimento riceveranno, come dividerete i beni – avranno effetti a lungo termine sulla tua famiglia.\n\nIl nostro approccio è diverso: non vogliamo trasformare il vostro conflitto familiare in una battaglia legale se è evitabile. Cerchiamo soluzioni che tutelino gli interessi di tutti, soprattutto dei bambini. Che tu stia affrontando una separazione consensuale dove vi mettete d'accordo, oppure una separazione più difficile dove le opinioni divergono, siamo qui per guidarti in modo compassionevole ma determinato. Proteggiamo i tuoi diritti e quelli dei tuoi figli con professionalità e umanità.",
+      "services": [
+        "Separazione consensuale (quando entrambi i coniugi sono d'accordo)",
+        "Separazione giudiziale (quando non c'è accordo)",
+        "Divorzio e procedure di scioglimento del matrimonio",
+        "Affidamento dei figli (esclusivo, condiviso o alternato)",
+        "Assegno di mantenimento dei figli",
+        "Divisione della comunione dei beni",
+        "Accordi di convivenza (per coppie non coniugate)",
+        "Mediazione familiare (risoluzione consensuale con l'aiuto di un mediatore)",
+        "Tutela del minore in situazioni di abuso o negligenza"
+      ],
+      "handledBy": "Avv. Marzia Amaranto",
+      "faqs": [
+        {
+          "question": "Qual è la differenza fra separazione e divorzio?",
+          "answer": "La separazione scioglie gli obblighi di convivenza e fedeltà, ma vi rimane comunque il vincolo matrimoniale. È il primo passo, spesso necessario per stare separati. Il divorzio cancella completamente il matrimonio. In genere, dopo una separazione consensuale puoi chiedere il divorzio dopo 6 mesi. Se la separazione è non consensuale, devi aspettare 3 anni."
+        },
+        {
+          "question": "Come viene deciso con chi vivranno i miei figli?",
+          "answer": "Il giudice (o voi stessi se vi mettete d'accordo) decide sempre pensando a cosa sia meglio per il bambino. Se i genitori riescono ad andare d'accordo, potete scegliere l'affidamento condiviso (il bambino sta con entrambi) o altri accordi. Se non siete d'accordo, il giudice valuta cose come il rapporto di ogni genitore con il figlio e dove il bambino ha vivuto fino ad ora."
+        },
+        {
+          "question": "Quanto dovrò pagare come mantenimento?",
+          "answer": "Non c'è un importo fisso. Dipende da quanto guadagna ogni genitore, da quanti giorni il bambino passa con ciascuno, e dalle spese del bambino. Se uno dei genitori non ha reddito, potrebbe non doversi pagare nulla. Se avete redditi diversi, quello con reddito più alto contribuisce di più. Cerchiamo sempre accordi equi che permettano a entrambi di mantenersi e al bambino di avere tutto ciò che serve."
+        }
+      ]
     },
     "condo": {
       "title": "Diritto Condominiale",
-      "description": "Gestione delle controversie condominiali, impugnazione delibere assembleari, responsabilità dell’amministratore, parti comuni e diritti dei singoli condomini."
+      "description": "Gestione delle controversie condominiali, impugnazione delibere assembleari, responsabilità dell'amministratore, parti comuni e diritti dei singoli condomini.",
+      "overview": "Se vivi in un condominio, sai bene che non sempre le cose vanno lisce. Ci possono essere litigi sui lavori da fare, sulle spese comuni, sul rumore dei vicini, o sulla gestione dell'amministratore. Il Diritto Condominiale regola come i condomini convivono e come si risolvono queste situazioni.\n\nMolte persone non sanno che hanno diritti specifici nel condominio: per esempio, hanno il diritto di ricevere una documentazione chiara sulle spese, di impugnare delibere assembleari sbagliate, e di difendersi se qualcuno in condominio causa loro un danno. Nel nostro studio, affrontiamo questi problemi in modo pratico e diretto. Sia che tu debba difenderti da spese ritenute ingiuste, che tu voglia impugnare una decisione dell'assemblea, o che il vicino stia creando problemi di rumore e umidità, siamo dalla tua parte per tutelare i tuoi diritti di proprietario.",
+      "services": [
+        "Impugnazione di delibere assembleari illegittime o irregolari",
+        "Controversie sulle spese comuni (manutenzione, ascensore, riscaldamento)",
+        "Difesa dai comportamenti dannosi di altri condomini",
+        "Controversie con l'amministratore di condominio",
+        "Approvazione di lavori straordinari (ristrutturazioni, ascensori)",
+        "Recupero di quote condominiali non pagate",
+        "Questioni di luminosità, umidità e inquinamento da vicini",
+        "Violazioni di norme condominiali (abusivismo, modifiche non autorizzate)",
+        "Questioni di responsabilità civile per danni in parti comuni"
+      ],
+      "handledBy": "Avv. Marzia Amaranto",
+      "faqs": [
+        {
+          "question": "Posso contestare le decisioni prese dall'assemblea del condominio?",
+          "answer": "Sì, se la delibera è illegittima o fatta in modo scorretto, puoi impugnarla in tribunale. Hai però poco tempo: 30 giorni dalla comunicazione della delibera. Se entro questo termine non protesti, perdi il diritto di contrariarla dopo. Ti aiutiamo a capire se hai motivi concreti per impugnarla."
+        },
+        {
+          "question": "Quali spese condominiali posso rifiutare di pagare?",
+          "answer": "Le spese ordinarie (amministrazione, manutenzione ordinaria) le devi pagare sempre. Le spese straordinarie (grandi lavori) la loro legittimità dipende da come sono state deliberate. Se l'assemblea le ha deliberate in modo irregolare, o se i lavori non rispettano le norme, puoi contestare. Ti aiutiamo a valutare se hai ragione."
+        },
+        {
+          "question": "Cosa posso fare se il mio vicino fa rumore o danneggia il mio appartamento?",
+          "answer": "Dipende dal tipo di danno. Se è solo rumore, puoi prima chiedere all'amministratore di intervenire. Se il danno causa problemi fisici (umidità, infiltrazioni, crepe), puoi chiedere un risarcimento al responsabile. Se non c'è accordo, ricorriamo al tribunale per farti pagare il danno."
+        }
+      ]
     },
     "ctaText": "Hai bisogno di assistenza legale?",
-    "ctaButton": "Contattaci Ora"
+    "ctaButton": "Contattaci Ora",
+    "labels": {
+      "handledBy": "GESTITO DA",
+      "services": "Servizi",
+      "faqs": "Domande e Risposte",
+      "teamMessage": "Il nostro team è disponibile per fornire consulenza specializzata e assistenza nelle materie di nostra competenza."
+    }
   },
   "presentation": {
     "title": "Chi siamo",
     "subtitle": "Professionalità ed esperienza per la tutela dei tuoi diritti",
-    "description": "Lo Studio Legale Amaranto presta assistenza in ambito civile, penale e familiare. L’approccio unisce competenza giuridica, ascolto attento delle esigenze del cliente e una gestione rigorosa del contenzioso, con particolare attenzione alla tutela dei diritti della persona e della famiglia.",
+    "description": "Lo Studio Legale Amaranto presta assistenza in ambito civile, penale e familiare. L'approccio unisce competenza giuridica, ascolto attento delle esigenze del cliente e una gestione rigorosa del contenzioso, con particolare attenzione alla tutela dei diritti della persona e della famiglia.",
     "cta": "Scopri il nostro team →",
     "marzia": {
       "name": "Avv. Marzia Amaranto",

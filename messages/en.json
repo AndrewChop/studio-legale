@@ -57,22 +57,134 @@
     "subtitle": "Experience and expertise across key areas of law",
     "civil": {
       "title": "Civil Law",
-      "description": "Contracts, property, liability, inheritance. Legal advice for personal and financial matters."
+      "description": "Contracts, property, liability, inheritance. Legal advice for personal and financial matters.",
+      "overview": "Civil law covers the everyday situations that affect everyone: when you have a dispute with a supplier, when you buy a house, when you need to manage an inheritance, or when you suffer damage. It's not just about going to court—often it's about finding practical solutions before the situation becomes a lawsuit.\n\nAt the Amaranto Law Firm, we work to protect your rights proactively. Whether you need to draft an important contract, resolve a dispute with a company, recover a sum owed, or manage an inheritance, our goal is to give you clear, understandable solutions that serve your interests. We know that legal issues can seem complicated, which is why we explain everything simply, without unnecessary jargon, helping you understand your options and possible consequences before you decide.",
+      "services": [
+        "Contract drafting and review (sales, leases, loans)",
+        "Debt recovery and enforcement procedures",
+        "Advice on property ownership and property rights",
+        "Inheritance and estate management",
+        "Compensation claims for traffic accidents and civil liability",
+        "Mediation and out-of-court dispute resolution",
+        "Medical liability (assistance in healthcare negligence cases)",
+        "Condominium matters and property rights"
+      ],
+      "handledBy": "Atty. Marzia Amaranto",
+      "faqs": [
+        {
+          "question": "How long does it take to resolve a civil dispute?",
+          "answer": "It varies greatly depending on the type of dispute. If we can resolve it amicably (outside court), it might take a few months. If a lawsuit is necessary, it usually takes 2-3 years for the first instance, with the possibility of appeal after. We help you understand realistic timelines from the start."
+        },
+        {
+          "question": "Is it always necessary to go to court?",
+          "answer": "No, in fact it's often better to avoid it. There are many ways to resolve disputes: mediation, direct agreements, formal letters. These approaches are often faster, less expensive, and less stressful than going to court. We evaluate with you which option is best."
+        },
+        {
+          "question": "What documents do I need for a legal claim?",
+          "answer": "It depends on the case, but generally you need: contracts or written communications, documents proving the damage, and any evidence that the other party was at fault. We help you understand what to collect and how to organize the documentation."
+        }
+      ]
     },
     "criminal": {
       "title": "Criminal Law",
-      "description": "Defense in criminal proceedings, including ordinary and military offences. Complete legal representation for the protection of your rights."
+      "description": "Defense in criminal proceedings, including ordinary and military offences. Complete legal representation for the protection of your rights.",
+      "overview": "Being accused of a crime is a serious situation that can change your life. Whether you've been arrested by police, received a notification of crime, or suspect you're in a difficult legal situation, it's essential to have an experienced lawyer on your side who understands how the criminal justice system works.\n\nAt our firm, criminal defense is not just a legal matter—it's personal. We know that an accused person has rights that must be protected from the very first moment. Whether the situation involves ordinary crimes (theft, assault, fraud) or more specialized matters like military criminal law, our job is to ensure your legal rights are respected, that you're informed about every step of the process, and that your case is defended as effectively as possible.",
+      "services": [
+        "Defense during preliminary investigation (when police are still investigating)",
+        "Assistance in arrest and detention",
+        "Defense in criminal trial before the court",
+        "Abbreviated trial proceedings (faster with sentence reductions)",
+        "Defense in economic crimes and fraud cases",
+        "Military criminal law (for military personnel)",
+        "Appeals and reviews",
+        "Victim protection (if you are a crime victim)"
+      ],
+      "handledBy": "Atty. Antonio Amaranto",
+      "faqs": [
+        {
+          "question": "I've been arrested: what should I do?",
+          "answer": "First, you have the right to a lawyer and the right to remain silent until your attorney is present. Don't sign anything without consulting your lawyer. Contact us immediately: we'll be at your side at every stage, from police interrogation to trial. The first moment is crucial for protecting your rights."
+        },
+        {
+          "question": "What's the difference between an abbreviated trial and a regular trial?",
+          "answer": "An abbreviated trial is faster: the judge decides based on documentation without lengthy hearings. The downside is it has fewer evidentiary rules than a regular trial. However, the judge typically applies a sentence reduction (25-30% discount). We'll evaluate together whether it makes sense in your case."
+        },
+        {
+          "question": "Can I negotiate a plea agreement to resolve the case quickly?",
+          "answer": "Yes, through a plea agreement you can agree on a sentence without trial. It's a quick solution that avoids the trial process and often results in a reduced sentence. It's not allowed in all cases, but we carefully evaluate whether it's right for you."
+        }
+      ]
     },
     "family": {
       "title": "Family Law",
-      "description": "Separation, divorce, cohabitation agreements, child protection and custody. Legal support through sensitive family matters."
+      "description": "Separation, divorce, cohabitation agreements, child protection and custody. Legal support through sensitive family matters.",
+      "overview": "Family matters are among the most delicate and important in life. Separation or divorce is never easy, especially when children are involved. The decisions you make at this stage—about where your children will live, how much maintenance they'll receive, how you'll divide assets—will have long-term effects on your family.\n\nOur approach is different: we don't want to turn your family conflict into a legal battle if it can be avoided. We seek solutions that protect everyone's interests, especially your children's. Whether you're facing a consensual separation where you both agree, or a more difficult separation where opinions differ, we're here to guide you with both compassion and determination. We protect your rights and your children's rights with professionalism and humanity.",
+      "services": [
+        "Consensual separation (when both spouses agree)",
+        "Contested separation (when there's disagreement)",
+        "Divorce and dissolution of marriage",
+        "Child custody (exclusive, joint, or alternating)",
+        "Child support and maintenance",
+        "Division of marital property",
+        "Cohabitation agreements (for unmarried couples)",
+        "Family mediation (consensual resolution with a mediator)",
+        "Child protection in cases of abuse or neglect"
+      ],
+      "handledBy": "Atty. Marzia Amaranto",
+      "faqs": [
+        {
+          "question": "What's the difference between separation and divorce?",
+          "answer": "Separation ends the duties of cohabitation and fidelity, but you remain legally married. It's often the first step when you want to live separately. Divorce completely dissolves the marriage. Typically, after a consensual separation you can file for divorce after 6 months. If the separation is contested, you must wait 3 years."
+        },
+        {
+          "question": "How is custody of my children decided?",
+          "answer": "The judge (or you together if you agree) always decides based on what's best for the child. If parents can agree, you can choose joint custody (the child lives with both) or other arrangements. If you can't agree, the judge considers things like each parent's relationship with the child and where the child has been living."
+        },
+        {
+          "question": "How much will I have to pay in child support?",
+          "answer": "There's no fixed amount. It depends on how much each parent earns, how many days the child spends with each parent, and the child's expenses. If one parent has no income, they may not need to pay. If you have different incomes, the higher earner contributes more. We always seek fair agreements that allow both parents to support themselves and your child to have everything they need."
+        }
+      ]
     },
     "condo": {
       "title": "Condominium Law",
-      "description": "Protection of condominium rights and management of condominium disputes. Legal assistance concerning property regulations."
+      "description": "Protection of condominium rights and management of condominium disputes. Legal assistance concerning property regulations.",
+      "overview": "If you live in a condominium, you know things don't always run smoothly. There can be disagreements about work that needs to be done, common expenses, noisy neighbors, or management decisions. Condominium law regulates how condominium residents coexist and how these situations are resolved.\n\nMany people don't know they have specific rights in a condominium: for example, you have the right to clear documentation of expenses, to challenge improper assembly decisions, and to defend yourself if someone in the building causes you damage. In our firm, we address these issues in a practical and direct way. Whether you need to defend yourself against questionable expenses, challenge an assembly decision, or a neighbor is creating noise and moisture problems, we're on your side to protect your property owner rights.",
+      "services": [
+        "Challenge of improper or illegitimate assembly resolutions",
+        "Disputes over common expenses (maintenance, elevator, heating)",
+        "Defense against damaging behavior from other residents",
+        "Disputes with the condominium manager",
+        "Approval of extraordinary works (renovations, elevators)",
+        "Recovery of unpaid condominium shares",
+        "Issues with noise, moisture, and neighbor pollution",
+        "Violations of condominium rules (illegal building, unauthorized changes)",
+        "Civil liability for damage to common areas"
+      ],
+      "handledBy": "Atty. Marzia Amaranto",
+      "faqs": [
+        {
+          "question": "Can I challenge decisions made by the condominium assembly?",
+          "answer": "Yes, if the resolution is illegitimate or done improperly, you can challenge it in court. However, you have little time: 30 days from when you're notified of the resolution. If you don't file a complaint within this period, you lose the right to challenge it later. We help you understand whether you have concrete grounds to challenge it."
+        },
+        {
+          "question": "Which condominium expenses must I pay?",
+          "answer": "Ordinary expenses (management, ordinary maintenance) you must always pay. Extraordinary expenses (major works) depend on how they were decided. If the assembly decided on them improperly, or if the work doesn't comply with regulations, you can contest them. We help you evaluate whether you're right."
+        },
+        {
+          "question": "What can I do if my neighbor makes noise or damages my apartment?",
+          "answer": "It depends on the type of damage. If it's just noise, you can first ask the manager to intervene. If the damage causes physical problems (moisture, infiltration, cracks), you can ask the responsible party for compensation. If there's no agreement, we'll take you to court to recover damages."
+        }
+      ]
     },
     "ctaText": "Do you need legal assistance?",
-    "ctaButton": "Contact Us"
+    "ctaButton": "Contact Us",
+    "labels": {
+      "handledBy": "HANDLED BY",
+      "services": "Services",
+      "faqs": "Frequently Asked Questions",
+      "teamMessage": "Our team is available to provide specialized legal advice and assistance in the areas of our expertise."
+    }
   },
   "presentation": {
     "title": "About the Firm",
