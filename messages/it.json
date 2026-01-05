@@ -227,6 +227,28 @@
     "saturday": "Sabato",
     "saturdayHours": "9:00 - 13:00"
   },
+  "contactsPage": {
+    "title": "Contatti",
+    "subtitle": "Puoi chiamarci, scriverci o fissare un appuntamento in studio.",
+    "callTitle": "Telefono e WhatsApp",
+    "callDesc": "Per urgenze o per parlare subito con noi.",
+    "mailTitle": "Email",
+    "mailDesc": "Per richieste dettagliate o invio documenti.",
+    "addressTitle": "Studio",
+    "addressLine": "Via Bugatti 33, 56022 Castelfranco di Sotto (PI)",
+    "mapTitle": "Dove trovarci",
+    "mapSubtitle": "Studio raggiungibile con parcheggi liberi vicini.",
+    "mapNote": "A pochi minuti dal centro di Castelfranco di Sotto.",
+    "hoursTitle": "Orari di studio",
+    "hoursWeek": "Lunedì - Venerdì: 9:00 - 18:00",
+    "hoursSat": "Sabato: 9:00 - 13:00 (su appuntamento)",
+    "hoursNote": "Disponibili anche online. Appuntamenti su prenotazione per garantire la massima attenzione.",
+    "bookingTitle": "Prenota una consulenza",
+    "bookingDesc": "Compila il modulo: ti ricontattiamo per confermare e raccogliere le info utili.",
+    "bookingCta": "Vai alla prenotazione",
+    "urgentCta": "Chiama ora",
+    "responseTime": "Risposta entro 48 ore lavorative."
+  },
   "footer": {
     "studioName": "Studio Legale Amaranto",
     "copyright": "Tutti i diritti riservati.",

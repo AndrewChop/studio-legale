@@ -224,6 +224,28 @@
     "saturday": "Saturday",
     "saturdayHours": "9:00 AM - 1:00 PM"
   },
+  "contactsPage": {
+    "title": "Contact",
+    "subtitle": "Reach us by phone, email, or book an appointment at the firm.",
+    "callTitle": "Call or WhatsApp",
+    "callDesc": "For urgent matters or to speak with a lawyer right away.",
+    "mailTitle": "Send us an email",
+    "mailDesc": "For detailed requests or to share documents.",
+    "addressTitle": "Visit our office",
+    "addressLine": "Via Bugatti 33, 56022 Castelfranco di Sotto (PI)",
+    "mapTitle": "Where to find us",
+    "mapSubtitle": "The office is easy to reach, with nearby free parking.",
+    "mapNote": "We are just a few minutes from the center of Castelfranco di Sotto.",
+    "hoursTitle": "Office hours",
+    "hoursWeek": "Monday - Friday: 9:00 AM - 6:00 PM",
+    "hoursSat": "Saturday: 9:00 AM - 1:00 PM (by appointment)",
+    "hoursNote": "Online meetings available. Appointments are scheduled to guarantee dedicated time.",
+    "bookingTitle": "Schedule a consultation",
+    "bookingDesc": "Use the booking form: we'll get back to confirm the appointment and collect any helpful details.",
+    "bookingCta": "Go to booking",
+    "urgentCta": "Call now",
+    "responseTime": "Response within 48 business hours."
+  },
   "footer": {
     "studioName": "Amaranto Law Firm",
     "copyright": "All rights reserved.",
