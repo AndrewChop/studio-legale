@@ -49,7 +49,7 @@ export async function POST(request: NextRequest) {
     // Send email to studio
     await resend.emails.send({
       from: "onboarding@resend.dev", // Dominio di test - funziona in localhost
-      to: "amarantoandrea@gmail.com",
+      to: "studiolegaleamaranto@gmail.com",
       subject: `Nuova richiesta di consulenza da ${sanitized.fullName}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
