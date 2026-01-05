@@ -62,7 +62,7 @@ export default function ChiSiamoPreview() {
         <div className="text-center mt-8 md:mt-10 lg:mt-12">
           <Link
             href="/chi-siamo"
-            className="text-sm md:text-base font-medium text-gray-800 underline hover:text-amber-600 transition-colors"
+            className="text-sm md:text-base font-medium text-gray-800 underline hover:text-primary transition-colors"
           >
             {t.cta}
           </Link>

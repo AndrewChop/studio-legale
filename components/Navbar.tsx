@@ -242,7 +242,7 @@ export default function ResponsiveNavbar() {
                         onClick={() => handleLanguageChange("en")}
                         className={`cursor-pointer flex items-center gap-3 px-4 py-2.5 hover:bg-gray-100 ${
                           currentLang === "en"
-                            ? "border-l-4 border-amber-500 text-amber-600 font-medium"
+                            ? "border-l-4 border-primary text-primary font-medium"
                             : ""
                         }`}
                       >

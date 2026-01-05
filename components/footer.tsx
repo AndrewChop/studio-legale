@@ -17,20 +17,20 @@ export default function Footer() {
         <div className="flex flex-row md:flex-row gap-4 md:gap-6 lg:gap-8 text-sm md:text-sm lg:text-base items-center">
           <Link
             href="/privacy"
-            className="hover:underline hover:text-amber-400 transition-colors"
+            className="hover:underline hover:text-primary transition-colors"
           >
             {t.privacy}
           </Link>
           <Link
             href="/contatti"
-            className="hover:underline hover:text-amber-400 transition-colors"
+            className="hover:underline hover:text-primary transition-colors"
           >
             {t.contacts}
           </Link>
           {/* Icona admin discreta */}
           <Link
             href="/login"
-            className="text-gray-500 hover:text-amber-400 transition-colors opacity-50 hover:opacity-100"
+            className="text-gray-500 hover:text-primary transition-colors opacity-50 hover:opacity-100"
             title={t.adminArea}
           >
             <User size={16} className="md:size-5 lg:size-6" />

@@ -26,7 +26,7 @@ export default function ContattiCTA() {
                 href="https://wa.me/393383470581"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-amber-600 hover:underline transition-colors cursor-pointer"
+                className="hover:text-primary hover:underline transition-colors cursor-pointer"
               >
                 +39 338 347 0581
               </a>
@@ -34,7 +34,7 @@ export default function ContattiCTA() {
                 href="https://wa.me/393669141424"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-amber-600 hover:underline transition-colors cursor-pointer"
+                className="hover:text-primary hover:underline transition-colors cursor-pointer"
               >
                 +39 366 914 1424
               </a>
@@ -44,7 +44,7 @@ export default function ContattiCTA() {
             <Mail className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
             <a
               href="mailto:studiolegaleamaranto@gmail.com"
-              className="break-all md:break-normal hover:text-amber-600 hover:underline transition-colors cursor-pointer"
+              className="break-all md:break-normal hover:text-primary hover:underline transition-colors cursor-pointer"
             >
               studiolegaleamaranto@gmail.com
             </a>
@@ -55,7 +55,7 @@ export default function ContattiCTA() {
               href="https://maps.google.com/maps?q=Via+Bugatti+33,+56022+Castelfranco+di+Sotto+(PI),+Italy"
               target="_blank"
               rel="noopener noreferrer"
-              className="max-w-xs md:max-w-none hover:text-amber-600 hover:underline transition-colors cursor-pointer"
+              className="max-w-xs md:max-w-none hover:text-primary hover:underline transition-colors cursor-pointer"
             >
               Via Bugatti 33, 56022 Castelfranco di Sotto (PI)
             </a>

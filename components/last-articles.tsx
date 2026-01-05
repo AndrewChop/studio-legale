@@ -33,7 +33,7 @@ export default function ArticoliRecenti({ posts }: { posts: Post[] }) {
               <h3 className="text-base md:text-lg lg:text-xl font-semibold text-gray-900 mb-2 md:mb-3">
                 <Link
                   href={`/articoli/${post.slug}`}
-                  className="hover:underline hover:text-amber-600 transition-colors"
+                  className="hover:underline hover:text-primary transition-colors"
                 >
                   {post.title}
                 </Link>
@@ -48,7 +48,7 @@ export default function ArticoliRecenti({ posts }: { posts: Post[] }) {
               </p>
               <Link
                 href={`/articoli/${post.slug}`}
-                className="text-sm md:text-base text-gray-700 hover:text-amber-600 hover:underline transition-colors font-medium"
+                className="text-sm md:text-base text-gray-700 hover:text-primary hover:underline transition-colors font-medium"
               >
                 {t.readMore}
               </Link>
@@ -59,7 +59,7 @@ export default function ArticoliRecenti({ posts }: { posts: Post[] }) {
         <div className="text-center mt-8 md:mt-10 lg:mt-12">
           <Link
             href="/articoli"
-            className="text-sm md:text-base text-gray-700 underline hover:text-amber-600 transition-colors font-medium"
+            className="text-sm md:text-base text-gray-700 underline hover:text-primary transition-colors font-medium"
           >
             {t.viewAll}
           </Link>
