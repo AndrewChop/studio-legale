@@ -28,11 +28,13 @@ Per evitare il dominio di test `onboarding@resend.dev`, verifica un dominio pers
 4. Una volta verificato, aggiorna l'API route:
 
 In `/app/api/booking/route.ts`, cambia:
+
 ```typescript
 from: "onboarding@resend.dev",  // ← Cambia questo
 ```
 
 Con:
+
 ```typescript
 from: "noreply@studio-legale-amaranto.com",  // ← Con il tuo dominio
 ```
@@ -48,6 +50,7 @@ Vai su `http://localhost:3000/prenota-consulenza` e prova a inviare il form.
 ## 5. Deploy su Vercel
 
 1. Aggiungi la `RESEND_API_KEY` alle variabili di ambiente in Vercel:
+
    - Vai a **Project Settings → Environment Variables**
    - Aggiungi `RESEND_API_KEY` con il valore della tua key
 
