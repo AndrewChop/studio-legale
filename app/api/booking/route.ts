@@ -13,8 +13,10 @@ export async function POST(request: NextRequest) {
 
     const resend = new Resend(apiKey);
 
-    const { fullName, email, company, phone, message, privacyAccepted } =
+    const { fullName, email, company, phone, message, privacyAccepted, lang } =
       await request.json();
+
+    const locale: "it" | "en" = lang === "en" ? "en" : "it";
 
     // Strong validation (company optional)
     const sanitized = {
@@ -46,82 +48,22 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    const templates = getEmailTemplates(locale, sanitized);
+
     // Send email to studio
     await resend.emails.send({
       from: "onboarding@resend.dev", // Dominio di test - funziona in localhost
       to: "studiolegaleamaranto@gmail.com",
-      subject: `Nuova richiesta di consulenza da ${sanitized.fullName}`,
-      html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h2 style="color: #1e40af; margin-bottom: 20px;">Nuova richiesta di consulenza</h2>
-          
-              <div style="background-color: #f3f4f6; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
-                <p><strong>Nome e cognome:</strong> ${sanitized.fullName}</p>
-                <p><strong>Email:</strong> ${sanitized.email}</p>
-                <p><strong>Azienda:</strong> ${
-                  sanitized.company || "(non indicata)"
-                }</p>
-                <p><strong>Telefono:</strong> ${sanitized.phone}</p>
-              </div>
-
-              ${
-                sanitized.message
-                  ? `<div style="margin-bottom: 20px;">
-            <h3 style="color: #374151; margin-bottom: 10px;">Messaggio:</h3>
-            <p style="color: #6b7280; line-height: 1.6; white-space: pre-wrap;">${escapeHtml(
-              sanitized.message
-            )}</p>
-          </div>`
-                  : ""
-              }
-
-          <div style="border-top: 1px solid #e5e7eb; padding-top: 20px; color: #9ca3af; font-size: 12px;">
-            <p>Questo messaggio è stato inviato dal modulo di richiesta consulenza del sito Studio Legale Amaranto.</p>
-          </div>
-        </div>
-      `,
+      subject: templates.adminSubject,
+      html: templates.adminHtml,
     });
 
     // Optional: Send confirmation email to user
     await resend.emails.send({
       from: "onboarding@resend.dev",
       to: sanitized.email,
-      subject: "Abbiamo ricevuto la tua richiesta - Studio Legale Amaranto",
-      html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h2 style="color: #1e40af; margin-bottom: 20px;">Grazie per la tua richiesta</h2>
-          
-          <p style="color: #374151; line-height: 1.6;">
-            Caro/a ${sanitized.fullName},
-          </p>
-          
-          <p style="color: #6b7280; line-height: 1.6;">
-            Abbiamo ricevuto la tua richiesta di consulenza. Il nostro team esaminerà i dettagli e ti contatterà al più presto tramite telefono o email per discutere delle tue esigenze legali.
-          </p>
-
-          <p style="color: #6b7280; line-height: 1.6;">
-            Se hai domande urgenti, puoi contattarci direttamente:
-          </p>
-
-          <div style="background-color: #f3f4f6; padding: 15px; border-radius: 8px; margin: 20px 0;">
-            <p style="color: #374151; margin: 5px 0;">
-              <strong>Telefono:</strong> +39 338 347 0581
-            </p>
-            <p style="color: #374151; margin: 5px 0;">
-              <strong>Email:</strong> studiolegaleamaranto@gmail.com
-            </p>
-          </div>
-
-          <p style="color: #6b7280; line-height: 1.6;">
-            Cordiali saluti,<br/>
-            <strong>Studio Legale Amaranto</strong>
-          </p>
-
-          <div style="border-top: 1px solid #e5e7eb; padding-top: 20px; color: #9ca3af; font-size: 12px;">
-            <p>Questo è un messaggio automatico. Non è necessario rispondere.</p>
-          </div>
-        </div>
-      `,
+      subject: templates.userSubject,
+      html: templates.userHtml,
     });
 
     return NextResponse.json(
@@ -165,4 +107,105 @@ function isValidPhone(value: string): boolean {
   if (cleaned.length < 7) return false;
   const re = /^[+()0-9\s-]+$/;
   return re.test(value);
+}
+
+type Sanitized = {
+  fullName: string;
+  email: string;
+  company: string;
+  phone: string;
+  message: string;
+  privacyAccepted: boolean;
+};
+
+function getEmailTemplates(locale: "it" | "en", data: Sanitized) {
+  const escapedMessage = data.message ? escapeHtml(data.message) : "";
+
+  if (locale === "en") {
+    return {
+      adminSubject: `New consultation request from ${data.fullName}`,
+      adminHtml: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <h2 style="color: #1e40af; margin-bottom: 20px;">New Consultation Request</h2>
+          <div style="background-color: #f3f4f6; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+            <p><strong>Name:</strong> ${data.fullName}</p>
+            <p><strong>Email:</strong> ${data.email}</p>
+            <p><strong>Company:</strong> ${data.company || "(not provided)"}</p>
+            <p><strong>Phone:</strong> ${data.phone}</p>
+          </div>
+          ${
+            escapedMessage
+              ? `<div style="margin-bottom: 20px;">
+                  <h3 style="color: #374151; margin-bottom: 10px;">Message:</h3>
+                  <p style="color: #6b7280; line-height: 1.6; white-space: pre-wrap;">${escapedMessage}</p>
+                </div>`
+              : ""
+          }
+          <div style="border-top: 1px solid #e5e7eb; padding-top: 20px; color: #9ca3af; font-size: 12px;">
+            <p>This message was sent from the consultation form on the Studio Legale Amaranto website.</p>
+          </div>
+        </div>
+      `,
+      userSubject: "We received your request - Studio Legale Amaranto",
+      userHtml: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <h2 style="color: #1e40af; margin-bottom: 20px;">Thank you for your request</h2>
+          <p style="color: #374151; line-height: 1.6;">Dear ${data.fullName},</p>
+          <p style="color: #6b7280; line-height: 1.6;">We have received your consultation request. Our team will review the details and contact you soon by phone or email to discuss your needs.</p>
+          <p style="color: #6b7280; line-height: 1.6;">If you have urgent questions, you can reach us directly:</p>
+          <div style="background-color: #f3f4f6; padding: 15px; border-radius: 8px; margin: 20px 0;">
+            <p style="color: #374151; margin: 5px 0;"><strong>Phone:</strong> +39 338 347 0581</p>
+            <p style="color: #374151; margin: 5px 0;"><strong>Email:</strong> studiolegaleamaranto@gmail.com</p>
+          </div>
+          <p style="color: #6b7280; line-height: 1.6;">Kind regards,<br/><strong>Studio Legale Amaranto</strong></p>
+          <div style="border-top: 1px solid #e5e7eb; padding-top: 20px; color: #9ca3af; font-size: 12px;">
+            <p>This is an automatic message. No reply is required.</p>
+          </div>
+        </div>
+      `,
+    };
+  }
+
+  return {
+    adminSubject: `Nuova richiesta di consulenza da ${data.fullName}`,
+    adminHtml: `
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+        <h2 style="color: #1e40af; margin-bottom: 20px;">Nuova richiesta di consulenza</h2>
+        <div style="background-color: #f3f4f6; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+          <p><strong>Nome e cognome:</strong> ${data.fullName}</p>
+          <p><strong>Email:</strong> ${data.email}</p>
+          <p><strong>Azienda:</strong> ${data.company || "(non indicata)"}</p>
+          <p><strong>Telefono:</strong> ${data.phone}</p>
+        </div>
+        ${
+          escapedMessage
+            ? `<div style="margin-bottom: 20px;">
+                <h3 style="color: #374151; margin-bottom: 10px;">Messaggio:</h3>
+                <p style="color: #6b7280; line-height: 1.6; white-space: pre-wrap;">${escapedMessage}</p>
+              </div>`
+            : ""
+        }
+        <div style="border-top: 1px solid #e5e7eb; padding-top: 20px; color: #9ca3af; font-size: 12px;">
+          <p>Questo messaggio è stato inviato dal modulo di richiesta consulenza del sito Studio Legale Amaranto.</p>
+        </div>
+      </div>
+    `,
+    userSubject: "Abbiamo ricevuto la tua richiesta - Studio Legale Amaranto",
+    userHtml: `
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+        <h2 style="color: #1e40af; margin-bottom: 20px;">Grazie per la tua richiesta</h2>
+        <p style="color: #374151; line-height: 1.6;">Caro/a ${data.fullName},</p>
+        <p style="color: #6b7280; line-height: 1.6;">Abbiamo ricevuto la tua richiesta di consulenza. Il nostro team esaminerà i dettagli e ti contatterà al più presto tramite telefono o email per discutere delle tue esigenze legali.</p>
+        <p style="color: #6b7280; line-height: 1.6;">Se hai domande urgenti, puoi contattarci direttamente:</p>
+        <div style="background-color: #f3f4f6; padding: 15px; border-radius: 8px; margin: 20px 0;">
+          <p style="color: #374151; margin: 5px 0;"><strong>Telefono:</strong> +39 338 347 0581</p>
+          <p style="color: #374151; margin: 5px 0;"><strong>Email:</strong> studiolegaleamaranto@gmail.com</p>
+        </div>
+        <p style="color: #6b7280; line-height: 1.6;">Cordiali saluti,<br/><strong>Studio Legale Amaranto</strong></p>
+        <div style="border-top: 1px solid #e5e7eb; padding-top: 20px; color: #9ca3af; font-size: 12px;">
+          <p>Questo è un messaggio automatico. Non è necessario rispondere.</p>
+        </div>
+      </div>
+    `,
+  };
 }
