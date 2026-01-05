@@ -23,7 +23,7 @@
         "label": "Publications",
         "hasDropdown": true
       },
-      "contacts": { "href": "/contatti", "label": "Contact Us" }
+      "contacts": { "href": "/contatti", "label": "Contacts" }
     },
     "areasDropdown": {
       "civil": { "href": "/area/diritto-civile", "label": "Civil Law" },
@@ -225,7 +225,7 @@
     "saturdayHours": "9:00 AM - 1:00 PM"
   },
   "contactsPage": {
-    "title": "Contact",
+    "title": "Contacts",
     "subtitle": "Reach us by phone, email, or book an appointment at the firm.",
     "callTitle": "Call or WhatsApp",
     "callDesc": "For urgent matters or to speak with a lawyer right away.",
@@ -250,13 +250,13 @@
     "studioName": "Amaranto Law Firm",
     "copyright": "All rights reserved.",
     "privacy": "Privacy Policy",
-    "contacts": "Contact",
+    "contacts": "Contacts",
     "adminArea": "Administrator Area",
     "description": "Professional legal consultancy in civil, criminal and military administrative law.",
     "quickLinks": "Quick Links",
     "legalInfo": "Legal Information",
     "terms": "Terms of Service",
-    "contact": "Contact"
+    "contact": "Contacts"
   },
   "common": {
     "loading": "Loading...",
