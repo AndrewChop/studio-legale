@@ -6,7 +6,7 @@ import { ChevronLeft } from "lucide-react";
 import { useTranslations } from "@/contexts/TranslationContext";
 
 export default function BookingPage() {
-  const { t, messages } = useTranslations();
+  const { t } = useTranslations();
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",

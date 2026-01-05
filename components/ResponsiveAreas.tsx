@@ -61,7 +61,7 @@ export default function ResponsiveAreas() {
 
         {/* Areas Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
-          {areas.map((area, index) => (
+          {areas.map((area) => (
             <Link
               key={area.title}
               href={area.href}

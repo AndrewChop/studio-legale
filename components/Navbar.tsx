@@ -54,10 +54,6 @@ export default function ResponsiveNavbar() {
       >
     ) || [];
 
-  const handleLinkClick = () => {
-    setIsOpen(false);
-  };
-
   const handleLanguageChange = (lang: "it" | "en") => {
     console.log("Changing language to:", lang);
     setLanguage(lang);
