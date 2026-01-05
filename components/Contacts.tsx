@@ -63,8 +63,8 @@ export default function ContattiCTA() {
         </div>
 
         <Link
-          href="/contatti"
-          className="inline-block bg-gray-900 text-white px-4 md:px-6 lg:px-8 py-2 md:py-3 lg:py-4 rounded-lg font-medium text-sm md:text-base lg:text-lg hover:bg-gray-800 hover:shadow-lg transition-all duration-300"
+          href="/prenota-consulenza"
+          className="min-h-14 bg-gray-900 text-white px-4 md:px-6 lg:px-8 py-2 md:py-3 lg:py-4 rounded-lg font-medium text-sm md:text-base lg:text-lg hover:bg-gray-800 hover:shadow-lg transition-all duration-300"
         >
           {t.cta}
         </Link>
