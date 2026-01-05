@@ -291,29 +291,29 @@
       "successTitle": "Request sent",
       "close": "Close",
       "unknownError": "An unexpected error occurred. Please try again later."
+    }
+  },
+  "aboutPage": {
+    "title": "About Us",
+    "subtitle": "Our team of professionals",
+    "expertiseLabel": "Areas of Expertise",
+    "marzia": {
+      "name": "Atty. Marzia Amaranto",
+      "role": "Founding Attorney",
+      "education": "Law Degree with specialization in International Law. Thesis in Criminal Law: 'Transnational Crime'.",
+      "expertise": "Civil law, family law, medical liability (Gelli-Bianco Law), traffic accidents, damages compensation, condominium law, driver's license recovery, forced execution.",
+      "experience": "She has gained solid experience in protecting citizens' rights, with particular focus on medical-healthcare disputes. She manages client relationships with special attention to medical malpractice cases, license recovery, and defense in disproportionate seizure cases.",
+      "publications": "Published articles in Cammino Diritto journal and collaborated with Il Riformista (2023-2024) on justice and rights issues, making legal language accessible to the general public.",
+      "qualifications": "Master's in Corporate Law (2020) - Member of the Pisa Bar Association - Practices throughout Italy"
     },
-    "aboutPage": {
-      "title": "About Us",
-      "subtitle": "Our team of professionals",
-      "expertiseLabel": "Areas of Expertise",
-      "marzia": {
-        "name": "Atty. Marzia Amaranto",
-        "role": "Founding Attorney",
-        "education": "Law Degree with specialization in International Law. Thesis in Criminal Law: 'Transnational Crime'.",
-        "expertise": "Civil law, family law, medical liability (Gelli-Bianco Law), traffic accidents, damages compensation, condominium law, driver's license recovery, forced execution.",
-        "experience": "She has gained solid experience in protecting citizens' rights, with particular focus on medical-healthcare disputes. She manages client relationships with special attention to medical malpractice cases, license recovery, and defense in disproportionate seizure cases.",
-        "publications": "Published articles in Cammino Diritto journal and collaborated with Il Riformista (2023-2024) on justice and rights issues, making legal language accessible to the general public.",
-        "qualifications": "Master's in Corporate Law (2020) - Member of the Pisa Bar Association - Practices throughout Italy"
-      },
-      "antonio": {
-        "name": "Atty. Antonio Amaranto",
-        "role": "Of Counsel",
-        "education": "Law Degree from the University of Padua. Specialized thesis in White-Collar Criminal Law.",
-        "expertise": "Criminal law, white-collar crime, labor law, military law, administrative and social security matters.",
-        "experience": "He has consolidated specific competencies through a comprehensive specialization path. His approach, based on an integrated and multidisciplinary vision of law, combines technical expertise with the ability to adapt to the specific needs of each case.",
-        "recognition": "Recognized as a high-profile expert and key figure in the firm for his thorough understanding of legal norms and procedural practices, both in judicial and out-of-court matters.",
-        "qualifications": "Post-graduate specialization in White-Collar Criminal Law - Practices throughout Italy with focus on criminal and military proceedings"
-      }
+    "antonio": {
+      "name": "Atty. Antonio Amaranto",
+      "role": "Of Counsel",
+      "education": "Law Degree from the University of Padua. Specialized thesis in White-Collar Criminal Law.",
+      "expertise": "Criminal law, white-collar crime, labor law, military law, administrative and social security matters.",
+      "experience": "He has consolidated specific competencies through a comprehensive specialization path. His approach, based on an integrated and multidisciplinary vision of law, combines technical expertise with the ability to adapt to the specific needs of each case.",
+      "recognition": "Recognized as a high-profile expert and key figure in the firm for his thorough understanding of legal norms and procedural practices, both in judicial and out-of-court matters.",
+      "qualifications": "Post-graduate specialization in White-Collar Criminal Law - Practices throughout Italy with focus on criminal and military proceedings"
     }
   }
 }

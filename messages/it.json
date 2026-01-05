@@ -294,29 +294,29 @@
       "successTitle": "Richiesta inviata",
       "close": "Chiudi",
       "unknownError": "Si è verificato un errore inatteso. Riprova più tardi."
+    }
+  },
+  "aboutPage": {
+    "title": "Chi Siamo",
+    "subtitle": "Il nostro team di professionisti",
+    "expertiseLabel": "Aree di competenza",
+    "marzia": {
+      "name": "Avv. Marzia Amaranto",
+      "role": "Avvocato Fondatore",
+      "education": "Laureata in Giurisprudenza con specializzazione in Diritto Internazionale. Tesi in Diritto Penale: 'Il reato transnazionale'.",
+      "expertise": "Diritto civile, diritto di famiglia, responsabilità medica (Legge Gelli-Bianco), infortunistica stradale, risarcimento danni, diritto condominiale, recupero patente di guida, esecuzione forzata.",
+      "experience": "Ha maturato una solida esperienza nella tutela dei diritti dei cittadini, con particolare attenzione alle controversie in ambito medico-sanitario. Si occupa della gestione dei rapporti con la clientela, con focus sui casi di malpractice medica, recupero patente e difesa in casi di pignoramenti sproporzionati.",
+      "publications": "Ha pubblicato articoli sulla rivista Cammino Diritto e collaborato con Il Riformista (2023-2024) su temi di giustizia e diritti, avvicinando il linguaggio giuridico al grande pubblico.",
+      "qualifications": "Master in Giurista d'Impresa (2020) - Iscritta all'Ordine degli Avvocati di Pisa - Esercita su tutto il territorio nazionale"
     },
-    "aboutPage": {
-      "title": "Chi Siamo",
-      "subtitle": "Il nostro team di professionisti",
-      "expertiseLabel": "Aree di competenza",
-      "marzia": {
-        "name": "Avv. Marzia Amaranto",
-        "role": "Avvocato Fondatore",
-        "education": "Laureata in Giurisprudenza con specializzazione in Diritto Internazionale. Tesi in Diritto Penale: 'Il reato transnazionale'.",
-        "expertise": "Diritto civile, diritto di famiglia, responsabilità medica (Legge Gelli-Bianco), infortunistica stradale, risarcimento danni, diritto condominiale, recupero patente di guida, esecuzione forzata.",
-        "experience": "Ha maturato una solida esperienza nella tutela dei diritti dei cittadini, con particolare attenzione alle controversie in ambito medico-sanitario. Si occupa della gestione dei rapporti con la clientela, con focus sui casi di malpractice medica, recupero patente e difesa in casi di pignoramenti sproporzionati.",
-        "publications": "Ha pubblicato articoli sulla rivista Cammino Diritto e collaborato con Il Riformista (2023-2024) su temi di giustizia e diritti, avvicinando il linguaggio giuridico al grande pubblico.",
-        "qualifications": "Master in Giurista d'Impresa (2020) - Iscritta all'Ordine degli Avvocati di Pisa - Esercita su tutto il territorio nazionale"
-      },
-      "antonio": {
-        "name": "Avv. Antonio Amaranto",
-        "role": "Of Counsel",
-        "education": "Laureato in Giurisprudenza presso l'Università degli Studi di Padova. Tesi specialistica in Diritto Penale dell'Economia.",
-        "expertise": "Diritto penale, diritto penale dell'economia, diritto giuslavoristico, diritto militare, disciplina amministrativa e previdenziale.",
-        "experience": "Ha consolidato competenze specifiche attraverso un articolato percorso di specializzazione. Il suo approccio, fondato su una visione integrata e multidisciplinare del diritto, combina competenza tecnica e capacità di adattarsi alle esigenze specifiche di ciascun caso.",
-        "recognition": "Riconosciuto come esperto di alto profilo e figura cardine dello studio per la sua comprensione approfondita delle norme giuridiche e delle prassi processuali, sia in ambito giudiziale che stragiudiziale.",
-        "qualifications": "Specializzazione post-lauream in Diritto Penale dell'Economia - Esercita la professione su tutto il territorio nazionale con focus su procedimenti penali e militari"
-      }
+    "antonio": {
+      "name": "Avv. Antonio Amaranto",
+      "role": "Of Counsel",
+      "education": "Laureato in Giurisprudenza presso l'Università degli Studi di Padova. Tesi specialistica in Diritto Penale dell'Economia.",
+      "expertise": "Diritto penale, diritto penale dell'economia, diritto giuslavoristico, diritto militare, disciplina amministrativa e previdenziale.",
+      "experience": "Ha consolidato competenze specifiche attraverso un articolato percorso di specializzazione. Il suo approccio, fondato su una visione integrata e multidisciplinare del diritto, combina competenza tecnica e capacità di adattarsi alle esigenze specifiche di ciascun caso.",
+      "recognition": "Riconosciuto come esperto di alto profilo e figura cardine dello studio per la sua comprensione approfondita delle norme giuridiche e delle prassi processuali, sia in ambito giudiziale che stragiudiziale.",
+      "qualifications": "Specializzazione post-lauream in Diritto Penale dell'Economia - Esercita la professione su tutto il territorio nazionale con focus su procedimenti penali e militari"
     }
   }
 }
