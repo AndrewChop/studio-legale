@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="bg-gray-900 text-gray-300 py-8 md:py-10 lg:py-12 mt-10">
       <div className="container mx-auto px-4 flex flex-col md:flex-row lg:flex-row justify-between items-center gap-4 md:gap-6 lg:gap-8">
         <p className="text-sm md:text-sm lg:text-base text-center md:text-left">
-          © {new Date().getFullYear()} {t.studioName}. {t.copyright}
+          © 2023 {t.studioName}. {t.copyright}
         </p>
         <div className="flex flex-row md:flex-row gap-4 md:gap-6 lg:gap-8 text-sm md:text-sm lg:text-base items-center">
           <Link
