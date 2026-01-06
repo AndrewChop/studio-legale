@@ -32,6 +32,10 @@
       "condo": {
         "href": "/area/diritto-condominiale",
         "label": "Condominium Law"
+      },
+      "traffic": {
+        "href": "/area/traffic-circulation",
+        "label": "Traffic Circulation and Penalties"
       }
     },
     "publicationsDropdown": {
@@ -56,7 +60,7 @@
     "title": "Practice Areas",
     "subtitle": "Experience and expertise across key areas of law",
     "civil": {
-      "title": "Civil Law",
+      "title": "Civil Law and Compensation",
       "description": "Contracts, property, liability, inheritance. Legal advice for personal and financial matters.",
       "overview": "Civil law covers the everyday situations that affect everyone: when you have a dispute with a supplier, when you buy a house, when you need to manage an inheritance, or when you suffer damage. It's not just about going to court—often it's about finding practical solutions before the situation becomes a lawsuit.\n\nAt the Amaranto Law Firm, we work to protect your rights proactively. Whether you need to draft an important contract, resolve a dispute with a company, recover a sum owed, or manage an inheritance, our goal is to give you clear, understandable solutions that serve your interests. We know that legal issues can seem complicated, which is why we explain everything simply, without unnecessary jargon, helping you understand your options and possible consequences before you decide.",
       "services": [
@@ -116,7 +120,7 @@
       ]
     },
     "family": {
-      "title": "Family Law",
+      "title": "Family and Minors Law",
       "description": "Separation, divorce, cohabitation agreements, child protection and custody. Legal support through sensitive family matters.",
       "overview": "Family matters are among the most delicate and important in life. Separation or divorce is never easy, especially when children are involved. The decisions you make at this stage—about where your children will live, how much maintenance they'll receive, how you'll divide assets—will have long-term effects on your family.\n\nOur approach is different: we don't want to turn your family conflict into a legal battle if it can be avoided. We seek solutions that protect everyone's interests, especially your children's. Whether you're facing a consensual separation where you both agree, or a more difficult separation where opinions differ, we're here to guide you with both compassion and determination. We protect your rights and your children's rights with professionalism and humanity.",
       "services": [
@@ -147,7 +151,7 @@
       ]
     },
     "condo": {
-      "title": "Condominium Law",
+      "title": "Condominium and Leases",
       "description": "Protection of condominium rights and management of condominium disputes. Legal assistance concerning property regulations.",
       "overview": "If you live in a condominium, you know things don't always run smoothly. There can be disagreements about work that needs to be done, common expenses, noisy neighbors, or management decisions. Condominium law regulates how condominium residents coexist and how these situations are resolved.\n\nMany people don't know they have specific rights in a condominium: for example, you have the right to clear documentation of expenses, to challenge improper assembly decisions, and to defend yourself if someone in the building causes you damage. In our firm, we address these issues in a practical and direct way. Whether you need to defend yourself against questionable expenses, challenge an assembly decision, or a neighbor is creating noise and moisture problems, we're on your side to protect your property owner rights.",
       "services": [
@@ -176,6 +180,10 @@
           "answer": "It depends on the type of damage. If it's just noise, you can first ask the manager to intervene. If the damage causes physical problems (moisture, infiltration, cracks), you can ask the responsible party for compensation. If there's no agreement, we'll take you to court to recover damages."
         }
       ]
+    },
+    "traffic": {
+      "title": "Traffic Circulation and Penalties",
+      "description": "Quick, precise support to minimize the impact of accidents, penalties, and license suspensions while protecting mobility and assets."
     },
     "ctaText": "Do you need legal assistance?",
     "ctaButton": "Contact Us",

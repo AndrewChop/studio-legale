@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Scale, Users, Heart, Building } from "lucide-react";
+import { Scale, Users, Heart, Building, Car } from "lucide-react";
 import { useAreasTranslations } from "../contexts/TranslationContext";
 
 export default function ResponsiveAreas() {
@@ -14,19 +14,24 @@ export default function ResponsiveAreas() {
       href: "/area/diritto-civile",
     },
     {
-      ...t.criminal,
-      icon: "scale",
-      href: "/area/diritto-penale",
-    },
-    {
       ...t.family,
       icon: "heart",
       href: "/area/diritto-famiglia",
     },
     {
+      ...t.criminal,
+      icon: "scale",
+      href: "/area/diritto-penale",
+    },
+    {
       ...t.condo,
       icon: "building",
       href: "/area/diritto-condominiale",
+    },
+    {
+      ...t.traffic,
+      icon: "car",
+      href: "/area/circolazione-stradale",
     },
   ];
 
@@ -41,6 +46,8 @@ export default function ResponsiveAreas() {
         return <Heart className={iconClass} />;
       case "building":
         return <Building className={iconClass} />;
+      case "car":
+        return <Car className={iconClass} />;
       default:
         return <Scale className={iconClass} />;
     }

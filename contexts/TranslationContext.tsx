@@ -153,6 +153,10 @@ export function useAreasTranslations() {
         title: t("areas.condo.title"),
         description: t("areas.condo.description"),
       },
+      traffic: {
+        title: t("areas.traffic.title"),
+        description: t("areas.traffic.description"),
+      },
       ctaText: t("areas.ctaText"),
       ctaButton: t("areas.ctaButton"),
     },

@@ -35,6 +35,10 @@
       "condo": {
         "href": "/area/diritto-condominiale",
         "label": "Diritto Condominiale"
+      },
+      "traffic": {
+        "href": "/area/circolazione-stradale",
+        "label": "Circolazione Stradale e Sanzioni"
       }
     },
     "publicationsDropdown": {
@@ -59,7 +63,7 @@
     "title": "Aree di Attività",
     "subtitle": "Assistenza legale specializzata nei principali settori del diritto",
     "civil": {
-      "title": "Diritto Civile",
+      "title": "Diritto Civile e Risarcimento",
       "description": "Contrattualistica, responsabilità civile, proprietà, successioni, recupero crediti e tutela dei diritti patrimoniali. Lo Studio offre un'assistenza completa nella gestione di controversie e nella prevenzione del contenzioso.",
       "overview": "Il Diritto Civile riguarda le questioni che interessano la vita di tutti i giorni: quando hai una controversia con un fornitore, quando acquisti una casa, quando ereditare beni familiari o quando subisci un danno. Non si tratta solo di andare in tribunale, ma spesso di trovare soluzioni pratiche prima che la situazione diventi una causa vera e propria.\n\nNello Studio Legale Amaranto, lavoriamo per proteggere i tuoi diritti in modo preventivo. Che tu debba redigere un contratto importante, risolvere una controversia con un'azienda, recuperare una somma dovuta o gestire una successione, il nostro obiettivo è offrirti soluzioni chiare, comprensibili e nel tuo interesse. Sappiamo che le questioni legali possono sembrare complicate: per questo ti spieghiamo tutto in modo semplice, senza inutili tecnicismi, aiutandoti a capire le tue opzioni e le possibili conseguenze prima di decidere.",
       "services": [
@@ -119,7 +123,7 @@
       ]
     },
     "family": {
-      "title": "Diritto di Famiglia",
+      "title": "Diritto di Famiglia e dei Minori",
       "description": "Separazioni, divorzi, regolamentazione dell'affido e dei rapporti economici, contratti di convivenza, tutela dei minori. Supporto legale in situazioni familiari complesse e ad elevato impatto personale.",
       "overview": "Le questioni familiari sono fra le più delicate e importanti della vita. Una separazione o un divorzio non è mai facile, specialmente quando ci sono figli. Le decisioni che prendi in questa fase – su dove vivranno i figli, quanto mantenimento riceveranno, come dividerete i beni – avranno effetti a lungo termine sulla tua famiglia.\n\nIl nostro approccio è diverso: non vogliamo trasformare il vostro conflitto familiare in una battaglia legale se è evitabile. Cerchiamo soluzioni che tutelino gli interessi di tutti, soprattutto dei bambini. Che tu stia affrontando una separazione consensuale dove vi mettete d'accordo, oppure una separazione più difficile dove le opinioni divergono, siamo qui per guidarti in modo compassionevole ma determinato. Proteggiamo i tuoi diritti e quelli dei tuoi figli con professionalità e umanità.",
       "services": [
@@ -150,7 +154,7 @@
       ]
     },
     "condo": {
-      "title": "Diritto Condominiale",
+      "title": "Condominio e Locazioni",
       "description": "Gestione delle controversie condominiali, impugnazione delibere assembleari, responsabilità dell'amministratore, parti comuni e diritti dei singoli condomini.",
       "overview": "Se vivi in un condominio, sai bene che non sempre le cose vanno lisce. Ci possono essere litigi sui lavori da fare, sulle spese comuni, sul rumore dei vicini, o sulla gestione dell'amministratore. Il Diritto Condominiale regola come i condomini convivono e come si risolvono queste situazioni.\n\nMolte persone non sanno che hanno diritti specifici nel condominio: per esempio, hanno il diritto di ricevere una documentazione chiara sulle spese, di impugnare delibere assembleari sbagliate, e di difendersi se qualcuno in condominio causa loro un danno. Nel nostro studio, affrontiamo questi problemi in modo pratico e diretto. Sia che tu debba difenderti da spese ritenute ingiuste, che tu voglia impugnare una decisione dell'assemblea, o che il vicino stia creando problemi di rumore e umidità, siamo dalla tua parte per tutelare i tuoi diritti di proprietario.",
       "services": [
@@ -179,6 +183,10 @@
           "answer": "Dipende dal tipo di danno. Se è solo rumore, puoi prima chiedere all'amministratore di intervenire. Se il danno causa problemi fisici (umidità, infiltrazioni, crepe), puoi chiedere un risarcimento al responsabile. Se non c'è accordo, ricorriamo al tribunale per farti pagare il danno."
         }
       ]
+    },
+    "traffic": {
+      "title": "Circolazione Stradale e Sanzioni",
+      "description": "Tutela rapida e precisa per limitare gli effetti di incidenti, sanzioni e sospensioni della patente, proteggendo mobilità e patrimonio."
     },
     "ctaText": "Hai bisogno di assistenza legale?",
     "ctaButton": "Contattaci Ora",
