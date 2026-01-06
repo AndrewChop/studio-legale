@@ -290,6 +290,7 @@
     "email": "Email",
     "company": "Azienda",
     "phone": "Telefono",
+    "subject": "Oggetto",
     "message": "Messaggio",
     "privacyLabel": "Dichiaro di aver letto, compreso e di accettare la Privacy Policy",
     "submit": "Invia",
@@ -309,6 +310,7 @@
       "email": "esempio@mail.com",
       "company": "(opzionale)",
       "phone": "+39 333 1234567",
+      "subject": "Es. Richiesta consulenza diritto civile",
       "message": "Scrivi il tuo messaggio"
     },
     "dialog": {

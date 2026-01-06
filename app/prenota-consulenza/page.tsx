@@ -12,6 +12,7 @@ export default function BookingPage() {
     email: "",
     company: "",
     phone: "",
+    subject: "",
     message: "",
     privacyAccepted: false,
   });
@@ -31,6 +32,7 @@ export default function BookingPage() {
     email: t("booking.email"),
     company: t("booking.company"),
     phone: t("booking.phone"),
+    subject: t("booking.subject"),
     message: t("booking.message"),
     privacyAccepted: t("booking.privacyLabel"),
   } as const;
@@ -40,6 +42,7 @@ export default function BookingPage() {
     email: t("booking.placeholders.email"),
     company: t("booking.placeholders.company"),
     phone: t("booking.placeholders.phone"),
+    subject: t("booking.placeholders.subject"),
     message: t("booking.placeholders.message"),
   } as const;
 
@@ -75,6 +78,7 @@ export default function BookingPage() {
       email: formData.email.trim(),
       company: formData.company.trim(),
       phone: formData.phone.trim(),
+      subject: formData.subject.trim(),
       message: formData.message.trim(),
     };
 
@@ -103,6 +107,16 @@ export default function BookingPage() {
     if (trimmed.company && trimmed.company.length < 2) {
       errors.push(
         `${t("booking.company")}: ${t("booking.validationReasons.minLength")}`
+      );
+    }
+
+    if (!trimmed.subject || trimmed.subject.length < 3) {
+      errors.push(
+        `${t("booking.subject")}: ${
+          trimmed.subject
+            ? t("booking.validationReasons.minLength")
+            : t("booking.validationReasons.required")
+        }`
       );
     }
 
@@ -162,6 +176,7 @@ export default function BookingPage() {
           email: "",
           company: "",
           phone: "",
+          subject: "",
           message: "",
           privacyAccepted: false,
         });
@@ -333,6 +348,26 @@ export default function BookingPage() {
                 value={formData.phone}
                 onChange={handleInputChange}
                 placeholder={placeholders.phone}
+                className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+              />
+            </div>
+
+            {/* Subject */}
+            <div>
+              <label
+                htmlFor="subject"
+                className="block text-sm font-semibold text-foreground mb-2"
+              >
+                {t("booking.subject")}
+                <span className="text-primary">*</span>
+              </label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                value={formData.subject}
+                onChange={handleInputChange}
+                placeholder={placeholders.subject}
                 className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
               />
             </div>

@@ -13,8 +13,16 @@ export async function POST(request: NextRequest) {
 
     sgMail.setApiKey(apiKey);
 
-    const { fullName, email, company, phone, message, privacyAccepted, lang } =
-      await request.json();
+    const {
+      fullName,
+      email,
+      company,
+      phone,
+      subject,
+      message,
+      privacyAccepted,
+      lang,
+    } = await request.json();
 
     const locale: "it" | "en" = lang === "en" ? "en" : "it";
 
@@ -24,6 +32,7 @@ export async function POST(request: NextRequest) {
       email: typeof email === "string" ? email.trim() : "",
       company: typeof company === "string" ? company.trim() : "",
       phone: typeof phone === "string" ? phone.trim() : "",
+      subject: typeof subject === "string" ? subject.trim() : "",
       message: typeof message === "string" ? message.trim() : "",
       privacyAccepted: Boolean(privacyAccepted),
     };
@@ -37,6 +46,8 @@ export async function POST(request: NextRequest) {
       errors.push("phone");
     if (sanitized.company && sanitized.company.length < 2)
       errors.push("company");
+    if (!sanitized.subject || sanitized.subject.length < 3)
+      errors.push("subject");
     if (!sanitized.message || sanitized.message.length < 5)
       errors.push("message");
     if (!sanitized.privacyAccepted) errors.push("privacyAccepted");
@@ -128,6 +139,7 @@ type Sanitized = {
   email: string;
   company: string;
   phone: string;
+  subject: string;
   message: string;
   privacyAccepted: boolean;
 };
@@ -146,6 +158,7 @@ function getEmailTemplates(locale: "it" | "en", data: Sanitized) {
             <p><strong>Email:</strong> ${data.email}</p>
             <p><strong>Company:</strong> ${data.company || "(not provided)"}</p>
             <p><strong>Phone:</strong> ${data.phone}</p>
+            <p><strong>Subject:</strong> ${data.subject}</p>
           </div>
           ${
             escapedMessage
@@ -190,6 +203,7 @@ function getEmailTemplates(locale: "it" | "en", data: Sanitized) {
           <p><strong>Email:</strong> ${data.email}</p>
           <p><strong>Azienda:</strong> ${data.company || "(non indicata)"}</p>
           <p><strong>Telefono:</strong> ${data.phone}</p>
+          <p><strong>Oggetto:</strong> ${data.subject}</p>
         </div>
         ${
           escapedMessage
