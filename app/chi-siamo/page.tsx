@@ -109,7 +109,7 @@ export default function ChiSiamoPage() {
 
                 <div className="space-y-6 text-muted-foreground">
                   <div className="bg-accent/20 p-6 rounded-none border-l-4 border-primary">
-                    <p className="font-semibold text-secondary text-lg uppercase tracking-wide text-sm mb-2">
+                    <p className="font-semibold text-secondary text-lg uppercase tracking-wide mb-2">
                       {t.expertiseLabel}
                     </p>
                     <p className="font-bold text-foreground text-base">

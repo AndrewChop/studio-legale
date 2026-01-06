@@ -61,7 +61,7 @@ export default function ResponsiveAreas() {
 
         {/* Areas Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
-          {areas.map((area, index) => (
+          {areas.map((area) => (
             <Link
               key={area.title}
               href={area.href}
@@ -98,7 +98,7 @@ export default function ResponsiveAreas() {
             {t.ctaText}
           </p>
           <Link
-            href="/contatti"
+            href="/prenota-consulenza"
             className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors duration-300 text-sm md:text-base"
           >
             {t.ctaButton}

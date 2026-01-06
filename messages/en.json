@@ -23,7 +23,7 @@
         "label": "Publications",
         "hasDropdown": true
       },
-      "contacts": { "href": "/contatti", "label": "Contact Us" }
+      "contacts": { "href": "/contatti", "label": "Contacts" }
     },
     "areasDropdown": {
       "civil": { "href": "/area/diritto-civile", "label": "Civil Law" },
@@ -50,7 +50,7 @@
     "subtitle": "The Amaranto Law Firm provides legal advice and assistance in civil and criminal law.",
     "cta": "Schedule a Consultation",
     "trustFree": "In-person and online legal consultations",
-    "trustResponse": "Response within 24 hours"
+    "trustResponse": "Response within 48 hours"
   },
   "areas": {
     "title": "Practice Areas",
@@ -224,17 +224,39 @@
     "saturday": "Saturday",
     "saturdayHours": "9:00 AM - 1:00 PM"
   },
+  "contactsPage": {
+    "title": "Contacts",
+    "subtitle": "Reach us by phone, email, or book an appointment at the firm.",
+    "callTitle": "Call or WhatsApp",
+    "callDesc": "For urgent matters or to speak with a lawyer right away.",
+    "mailTitle": "Send us an email",
+    "mailDesc": "For detailed requests or to share documents.",
+    "addressTitle": "Visit our office",
+    "addressLine": "Via Bugatti 33, 56022 Castelfranco di Sotto (PI)",
+    "mapTitle": "Where to find us",
+    "mapSubtitle": "The office is easy to reach, with nearby free parking.",
+    "mapNote": "We are just a few minutes from the center of Castelfranco di Sotto.",
+    "hoursTitle": "Office hours",
+    "hoursWeek": "Monday - Friday: 9:00 AM - 6:00 PM",
+    "hoursSat": "Saturday: 9:00 AM - 1:00 PM (by appointment)",
+    "hoursNote": "Online meetings available. Appointments are scheduled to guarantee dedicated time.",
+    "bookingTitle": "Schedule a consultation",
+    "bookingDesc": "Use the booking form: we'll get back to confirm the appointment and collect any helpful details.",
+    "bookingCta": "Go to booking",
+    "urgentCta": "Call now",
+    "responseTime": "Response within 48 business hours."
+  },
   "footer": {
     "studioName": "Amaranto Law Firm",
     "copyright": "All rights reserved.",
     "privacy": "Privacy Policy",
-    "contacts": "Contact",
+    "contacts": "Contacts",
     "adminArea": "Administrator Area",
     "description": "Professional legal consultancy in civil, criminal and military administrative law.",
     "quickLinks": "Quick Links",
     "legalInfo": "Legal Information",
     "terms": "Terms of Service",
-    "contact": "Contact"
+    "contact": "Contacts"
   },
   "common": {
     "loading": "Loading...",
@@ -254,7 +276,44 @@
     "invalidEmail": "Invalid email address",
     "invalidPhone": "Invalid phone number",
     "messageSent": "Message sent successfully",
-    "messageError": "An error occurred while sending the message"
+    "messageError": "An error occurred while sending the message",
+    "acceptPrivacy": "Please accept the Privacy Policy to continue",
+    "validationErrors": "Please check these fields:"
+  },
+  "booking": {
+    "title": "Request Information",
+    "subtitle": "Fill out the form below and we will get back to you as soon as possible",
+    "fullName": "Full Name",
+    "email": "Email",
+    "company": "Company",
+    "phone": "Phone",
+    "message": "Message",
+    "privacyLabel": "I declare that I have read, understood and agree to the Privacy Policy",
+    "submit": "Send",
+    "successMessage": "Your request has been sent successfully! We will contact you soon.",
+    "errorMessage": "An error occurred while sending your request. Please try again or contact us directly.",
+    "submitting": "Sending...",
+    "validationHeader": "Please fix the following:",
+    "validationReasons": {
+      "required": "required field",
+      "minLength": "minimum 2 characters",
+      "invalidEmail": "invalid email",
+      "invalidPhone": "invalid phone number",
+      "privacy": "please accept the Privacy Policy"
+    },
+    "placeholders": {
+      "fullName": "e.g. John Smith",
+      "email": "name@email.com",
+      "company": "(optional)",
+      "phone": "+44 01 2345 6789",
+      "message": "Write your message"
+    },
+    "dialog": {
+      "errorTitle": "Submission failed",
+      "successTitle": "Request sent",
+      "close": "Close",
+      "unknownError": "An unexpected error occurred. Please try again later."
+    }
   },
   "aboutPage": {
     "title": "About Us",

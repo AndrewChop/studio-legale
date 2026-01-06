@@ -21,10 +21,10 @@ export default function ResponsiveHero() {
         </p>
 
         {/* CTA Button - Touch Friendly */}
-        <Link href="/contatti">
+        <Link href="/prenota-consulenza">
           <Button
             size="lg"
-            className="w-fit sm:w-auto min-h-[48px] sm:px-4 py-3 text-base sm:text-lg font-medium bg-secondary text-secondary-foreground hover:bg-secondary/70 transition-colors shadow-lg hover:shadow-xl"
+            className="min-h-14 bg-gray-900 text-white px-4 md:px-6 lg:px-8 py-2 md:py-3 lg:py-4 rounded-lg font-medium text-sm md:text-base lg:text-lg hover:bg-gray-800 hover:shadow-lg transition-all duration-300"
           >
             {t.cta}
           </Button>

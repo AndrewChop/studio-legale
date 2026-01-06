@@ -53,7 +53,7 @@
     "subtitle": "Lo Studio Legale Amaranto offre consulenza e assistenza giudiziale e stragiudiziale in ambito civile, penale e di famiglia.",
     "cta": "Prenota una consulenza",
     "trustFree": "Consulenza in presenza e da remoto",
-    "trustResponse": "Riscontro entro 24 ore"
+    "trustResponse": "Riscontro entro 48 ore"
   },
   "areas": {
     "title": "Aree di Attività",
@@ -227,6 +227,28 @@
     "saturday": "Sabato",
     "saturdayHours": "9:00 - 13:00"
   },
+  "contactsPage": {
+    "title": "Contatti",
+    "subtitle": "Puoi chiamarci, scriverci o fissare un appuntamento in studio.",
+    "callTitle": "Telefono e WhatsApp",
+    "callDesc": "Per urgenze o per parlare subito con noi.",
+    "mailTitle": "Email",
+    "mailDesc": "Per richieste dettagliate o invio documenti.",
+    "addressTitle": "Studio",
+    "addressLine": "Via Bugatti 33, 56022 Castelfranco di Sotto (PI)",
+    "mapTitle": "Dove trovarci",
+    "mapSubtitle": "Studio raggiungibile con parcheggi liberi vicini.",
+    "mapNote": "A pochi minuti dal centro di Castelfranco di Sotto.",
+    "hoursTitle": "Orari di studio",
+    "hoursWeek": "Lunedì - Venerdì: 9:00 - 18:00",
+    "hoursSat": "Sabato: 9:00 - 13:00 (su appuntamento)",
+    "hoursNote": "Disponibili anche online. Appuntamenti su prenotazione per garantire la massima attenzione.",
+    "bookingTitle": "Prenota una consulenza",
+    "bookingDesc": "Compila il modulo: ti ricontattiamo per confermare e raccogliere le info utili.",
+    "bookingCta": "Vai alla prenotazione",
+    "urgentCta": "Chiama ora",
+    "responseTime": "Risposta entro 48 ore lavorative."
+  },
   "footer": {
     "studioName": "Studio Legale Amaranto",
     "copyright": "Tutti i diritti riservati.",
@@ -257,7 +279,44 @@
     "invalidEmail": "Email non valida",
     "invalidPhone": "Numero di telefono non valido",
     "messageSent": "Messaggio inviato con successo",
-    "messageError": "Errore nell'invio del messaggio"
+    "messageError": "Errore nell'invio del messaggio",
+    "acceptPrivacy": "Per continuare accetta la Privacy Policy",
+    "validationErrors": "Controlla questi campi:"
+  },
+  "booking": {
+    "title": "Richiedi informazioni",
+    "subtitle": "Compila il modulo qui sotto e riceverai una risposta nel più breve tempo possibile",
+    "fullName": "Nome e cognome",
+    "email": "Email",
+    "company": "Azienda",
+    "phone": "Telefono",
+    "message": "Messaggio",
+    "privacyLabel": "Dichiaro di aver letto, compreso e di accettare la Privacy Policy",
+    "submit": "Invia",
+    "successMessage": "La tua richiesta è stata inviata con successo! Ti contatteremo presto.",
+    "errorMessage": "Si è verificato un errore nell'invio della richiesta. Per favore, riprova o contattaci direttamente.",
+    "submitting": "Invio in corso...",
+    "validationHeader": "Correggi gli errori seguenti:",
+    "validationReasons": {
+      "required": "campo obbligatorio",
+      "minLength": "minimo 2 caratteri",
+      "invalidEmail": "email non valida",
+      "invalidPhone": "telefono non valido",
+      "privacy": "devi accettare la Privacy Policy"
+    },
+    "placeholders": {
+      "fullName": "Es. Mario Rossi",
+      "email": "esempio@mail.com",
+      "company": "(opzionale)",
+      "phone": "+39 333 1234567",
+      "message": "Scrivi il tuo messaggio"
+    },
+    "dialog": {
+      "errorTitle": "Invio non riuscito",
+      "successTitle": "Richiesta inviata",
+      "close": "Chiudi",
+      "unknownError": "Si è verificato un errore inatteso. Riprova più tardi."
+    }
   },
   "aboutPage": {
     "title": "Chi Siamo",
