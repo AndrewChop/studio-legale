@@ -1,17 +1,17 @@
-import { Resend } from "resend";
+import sgMail from "@sendgrid/mail";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest) {
   try {
-    const apiKey = process.env.RESEND_API_KEY;
+    const apiKey = process.env.SENDGRID_API_KEY;
     if (!apiKey) {
       return NextResponse.json(
-        { error: "Missing RESEND_API_KEY" },
+        { error: "Missing SENDGRID_API_KEY" },
         { status: 500 }
       );
     }
 
-    const resend = new Resend(apiKey);
+    sgMail.setApiKey(apiKey);
 
     const { fullName, email, company, phone, message, privacyAccepted, lang } =
       await request.json();
@@ -51,20 +51,34 @@ export async function POST(request: NextRequest) {
     const templates = getEmailTemplates(locale, sanitized);
 
     // Send email to studio
-    await resend.emails.send({
-      from: "onboarding@resend.dev", // Dominio di test - funziona in localhost
+    console.log("📧 Sending email to studio:", {
+      to: "studiolegaleamaranto@gmail.com",
+      subject: templates.adminSubject,
+    });
+
+    await sgMail.send({
+      from: "studiolegaleamaranto@gmail.com",
       to: "studiolegaleamaranto@gmail.com",
       subject: templates.adminSubject,
       html: templates.adminHtml,
     });
 
+    console.log("✅ Studio email sent successfully");
+
     // Optional: Send confirmation email to user
-    await resend.emails.send({
-      from: "onboarding@resend.dev",
+    console.log("📧 Sending confirmation to user:", {
+      to: sanitized.email,
+      subject: templates.userSubject,
+    });
+
+    await sgMail.send({
+      from: "studiolegaleamaranto@gmail.com",
       to: sanitized.email,
       subject: templates.userSubject,
       html: templates.userHtml,
     });
+
+    console.log("✅ User confirmation sent successfully");
 
     return NextResponse.json(
       {
