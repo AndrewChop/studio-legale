@@ -205,12 +205,12 @@
     "marzia": {
       "name": "Avv. Marzia Amaranto",
       "role": "Avvocato fondatore e Titolare",
-      "description": "Specializzata in diritto civile e familiare. Attiva su tutela del minore, separazioni e mediazione."
+      "description": "Specializzata in <strong>Diritto di Famiglia</strong> e <strong>Civile</strong>, tutela minori e legami familiari, affiancando i clienti in separazioni, affidamento e <strong>questioni legate al Diritto Civile</strong> con un approccio volto alla protezione della persona e dei suoi interessi quotidiani."
     },
     "antonio": {
       "name": "Avv. Antonio Amaranto",
       "role": "Of Counsel",
-      "description": "Esperto in diritto penale e amministrativo militare. Oltre vent'anni di esperienza nella difesa tecnica."
+      "description": "Esperto in <strong>Diritto Penale</strong>, <strong>Condominio</strong> e <strong>Circolazione Stradale</strong>, mettendo a disposizione dei clienti una solida esperienza nella difesa dei diritti in ambito penale, nella gestione dei conflitti condominiali e nella tutela da infortunistica stradale."
     }
   },
   "articles": {
@@ -331,24 +331,53 @@
   "aboutPage": {
     "title": "Chi Siamo",
     "subtitle": "Il nostro team di professionisti",
-    "expertiseLabel": "Aree di competenza",
+    "expertiseLabel": "Aree di Competenza",
     "marzia": {
       "name": "Avv. Marzia Amaranto",
       "role": "Avvocato Fondatore",
-      "education": "Laureata in Giurisprudenza con specializzazione in Diritto Internazionale. Tesi in Diritto Penale: 'Il reato transnazionale'.",
-      "expertise": "Diritto civile, diritto di famiglia, responsabilità medica (Legge Gelli-Bianco), infortunistica stradale, risarcimento danni, diritto condominiale, recupero patente di guida, esecuzione forzata.",
-      "experience": "Ha maturato una solida esperienza nella tutela dei diritti dei cittadini, con particolare attenzione alle controversie in ambito medico-sanitario. Si occupa della gestione dei rapporti con la clientela, con focus sui casi di malpractice medica, recupero patente e difesa in casi di pignoramenti sproporzionati.",
-      "publications": "Ha pubblicato articoli sulla rivista Cammino Diritto e collaborato con Il Riformista (2023-2024) su temi di giustizia e diritti, avvicinando il linguaggio giuridico al grande pubblico.",
-      "qualifications": "Master in Giurista d'Impresa (2020) - Iscritta all'Ordine degli Avvocati di Pisa - Esercita su tutto il territorio nazionale"
+      "education": "Laureata in Giurisprudenza con specializzazione in <strong>Diritto Internazionale</strong>. Tesi in Diritto Penale: 'Il reato transnazionale'. Master in <strong>Giurista d'Impresa</strong> (2020) - Iscritta all'Ordine degli Avvocati di Pisa",
+      "expertise": [
+        {
+          "title": "Diritto di Famiglia e dei Minori",
+          "description": "Specializzata nella gestione di separazioni, divorzi, affidamento e tutela dei diritti dei più piccoli con un approccio sensibile e protettivo."
+        },
+        {
+          "title": "Responsabilità Medica",
+          "description": "Assistenza legale nei casi di malpractice sanitaria (Legge Gelli-Bianco) e infezioni nosocomiali, per garantire il giusto ristoro ai pazienti."
+        },
+        {
+          "title": "Diritto Civile e Risarcimento Danni",
+          "description": "Tutela della persona nei casi di danni ingiusti, pratiche commerciali scorrette e contrattualistica."
+        },
+        {
+          "title": "Esecuzione Forzata",
+          "description": "Difesa del patrimonio dei cittadini in casi di pignoramenti sproporzionati."
+        }
+      ],
+      "experience": "",
+      "publications": "Ha pubblicato articoli sulla rivista <strong>Cammino Diritto</strong> e collaborato con <strong>Il Riformista</strong> (2023-2024) su temi di giustizia e diritti, avvicinando il linguaggio giuridico al grande pubblico.",
+      "qualifications": ""
     },
     "antonio": {
       "name": "Avv. Antonio Amaranto",
       "role": "Of Counsel",
-      "education": "Laureato in Giurisprudenza presso l'Università degli Studi di Padova. Tesi specialistica in Diritto Penale dell'Economia.",
-      "expertise": "Diritto penale, diritto penale dell'economia, diritto giuslavoristico, diritto militare, disciplina amministrativa e previdenziale.",
-      "experience": "Ha consolidato competenze specifiche attraverso un articolato percorso di specializzazione. Il suo approccio, fondato su una visione integrata e multidisciplinare del diritto, combina competenza tecnica e capacità di adattarsi alle esigenze specifiche di ciascun caso.",
-      "recognition": "Riconosciuto come esperto di alto profilo e figura cardine dello studio per la sua comprensione approfondita delle norme giuridiche e delle prassi processuali, sia in ambito giudiziale che stragiudiziale.",
-      "qualifications": "Specializzazione post-lauream in Diritto Penale dell'Economia - Esercita la professione su tutto il territorio nazionale con focus su procedimenti penali e militari"
+      "education": "Laureato in Giurisprudenza presso l'Università degli Studi di Padova. Tesi specialistica in <strong>Diritto Penale</strong>: 'Diritto Penale dell'Economia'.",
+      "expertise": [
+        {
+          "title": "Diritto Penale",
+          "description": "Difesa e assistenza in ogni fase del procedimento, con particolare focus sui reati contro il patrimonio e la persona."
+        },
+        {
+          "title": "Condominio e Locazioni",
+          "description": "Gestione delle controversie immobiliari, impugnazioni e dinamiche condominiali."
+        },
+        {
+          "title": "Circolazione Stradale",
+          "description": "Tutela dei diritti in caso di infortunistica e assistenza tecnica per ricorsi e sanzioni amministrative."
+        }
+      ],
+      "experience": "",
+      "qualifications": ""
     }
   }
 }

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePresentationTranslations } from "../contexts/TranslationContext";
+import RichText from "./ui/RichText";
 
 export default function ChiSiamoPreview() {
   const { t } = usePresentationTranslations();
@@ -15,13 +16,13 @@ export default function ChiSiamoPreview() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-10 items-center">
           {/* Avv. Marzia Amaranto */}
-          <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6">
+          <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-6">
             <Image
               src="/marzia.jpg"
               alt="Avv. Marzia Amaranto"
-              width={120}
-              height={120}
-              className="rounded-full object-cover w-20 h-20 md:w-24 md:h-24 lg:w-30 lg:h-30"
+              width={140}
+              height={140}
+              className="rounded-full object-cover object-center w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 mt-6 md:mt-0"
             />
             <div className="text-center md:text-left">
               <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-1">
@@ -30,20 +31,22 @@ export default function ChiSiamoPreview() {
               <p className="text-gray-700 font-semibold text-sm md:text-base mb-2">
                 {t.marzia.role}
               </p>
-              <p className="text-gray-700 text-sm md:text-base lg:text-lg leading-relaxed">
-                {t.marzia.description}
-              </p>
+              <RichText
+                as="p"
+                className="text-gray-700 text-sm md:text-base lg:text-lg leading-relaxed"
+                html={t.marzia.description}
+              />
             </div>
           </div>
 
           {/* Avv. Antonio Amaranto */}
-          <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6">
+          <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-6">
             <Image
               src="/antonio.jpg"
               alt="Avv. Antonio Amaranto"
-              width={120}
-              height={120}
-              className="rounded-full object-cover w-20 h-20 md:w-24 md:h-24 lg:w-30 lg:h-30"
+              width={140}
+              height={140}
+              className="rounded-full object-cover object-center w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 mt-6 md:mt-0"
             />
             <div className="text-center md:text-left">
               <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 mb-1">
@@ -52,9 +55,11 @@ export default function ChiSiamoPreview() {
               <p className="text-gray-700 font-semibold text-sm md:text-base mb-2">
                 {t.antonio.role}
               </p>
-              <p className="text-gray-700 text-sm md:text-base lg:text-lg leading-relaxed">
-                {t.antonio.description}
-              </p>
+              <RichText
+                as="p"
+                className="text-gray-700 text-sm md:text-base lg:text-lg leading-relaxed"
+                html={t.antonio.description}
+              />
             </div>
           </div>
         </div>

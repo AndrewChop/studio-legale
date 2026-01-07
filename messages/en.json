@@ -202,12 +202,12 @@
     "marzia": {
       "name": "Attorney Marzia Amaranto",
       "role": "Founder and Managing Attorney",
-      "description": "Specialised in civil and family law. Experienced in child protection, separation procedures and mediation."
+      "description": "Specialising in <strong>Family Law</strong> and <strong>Civil Law</strong>, child protection and family ties, supporting clients in separations, custody and <strong>issues related to Civil Law</strong> with an approach aimed at protecting individuals and their daily interests."
     },
     "antonio": {
       "name": "Attorney Antonio Amaranto",
       "role": "Of Counsel",
-      "description": "Expert in criminal and military administrative law. Over 20 years of experience in legal defence."
+      "description": "Expert in <strong>Criminal Law</strong>, <strong>Condominium Law</strong> and <strong>Road Traffic Law</strong>, offering clients solid experience in defending rights in criminal matters, managing condominium disputes and protecting against road accidents."
     }
   },
   "articles": {
@@ -332,20 +332,49 @@
     "marzia": {
       "name": "Atty. Marzia Amaranto",
       "role": "Founding Attorney",
-      "education": "Law Degree with specialization in International Law. Thesis in Criminal Law: 'Transnational Crime'.",
-      "expertise": "Civil law, family law, medical liability (Gelli-Bianco Law), traffic accidents, damages compensation, condominium law, driver's license recovery, forced execution.",
-      "experience": "She has gained solid experience in protecting citizens' rights, with particular focus on medical-healthcare disputes. She manages client relationships with special attention to medical malpractice cases, license recovery, and defense in disproportionate seizure cases.",
-      "publications": "Published articles in Cammino Diritto journal and collaborated with Il Riformista (2023-2024) on justice and rights issues, making legal language accessible to the general public.",
-      "qualifications": "Master's in Corporate Law (2020) - Member of the Pisa Bar Association - Practices throughout Italy"
+      "education": "Law Degree with specialization in <strong>International Law</strong>. Thesis in Criminal Law: 'Transnational Crime'. Master in <strong>Corporate Law</strong> (2020) - Member of the Pisa Bar Association",
+      "expertise": [
+        {
+          "title": "Family Law and Children's Rights",
+          "description": "Specialized in managing separations, divorces, custody arrangements, and protecting children's rights with a sensitive and protective approach."
+        },
+        {
+          "title": "Medical Liability",
+          "description": "Legal assistance in cases of medical malpractice (Gelli-Bianco Law) and hospital-acquired infections, ensuring proper compensation for patients."
+        },
+        {
+          "title": "Civil Law and Damages Compensation",
+          "description": "Protection of individuals in cases of wrongful injury, unfair commercial practices, and contract law matters."
+        },
+        {
+          "title": "Forced Execution",
+          "description": "Defense of citizens' assets in cases of disproportionate seizures."
+        }
+      ],
+      "experience": "",
+      "publications": "Published articles in <strong>Cammino Diritto</strong> journal and collaborated with <strong>Il Riformista</strong> (2023-2024) on justice and rights issues, making legal language accessible to the general public.",
+      "qualifications": ""
     },
     "antonio": {
       "name": "Atty. Antonio Amaranto",
       "role": "Of Counsel",
-      "education": "Law Degree from the University of Padua. Specialized thesis in White-Collar Criminal Law.",
-      "expertise": "Criminal law, white-collar crime, labor law, military law, administrative and social security matters.",
-      "experience": "He has consolidated specific competencies through a comprehensive specialization path. His approach, based on an integrated and multidisciplinary vision of law, combines technical expertise with the ability to adapt to the specific needs of each case.",
-      "recognition": "Recognized as a high-profile expert and key figure in the firm for his thorough understanding of legal norms and procedural practices, both in judicial and out-of-court matters.",
-      "qualifications": "Post-graduate specialization in White-Collar Criminal Law - Practices throughout Italy with focus on criminal and military proceedings"
+      "education": "Law Degree from the University of Padua. Specialized thesis in <strong>Criminal Law</strong>: 'White-Collar Criminal Law'.",
+      "expertise": [
+        {
+          "title": "Criminal Law",
+          "description": "Defense and assistance in every phase of proceedings, with particular focus on crimes against property and persons."
+        },
+        {
+          "title": "Condominium and Leasing",
+          "description": "Management of real estate disputes, challenges to resolutions, and condominium dynamics."
+        },
+        {
+          "title": "Traffic Circulation",
+          "description": "Protection of rights in case of traffic accidents and technical assistance for appeals and administrative penalties."
+        }
+      ],
+      "experience": "",
+      "qualifications": ""
     }
   }
 }

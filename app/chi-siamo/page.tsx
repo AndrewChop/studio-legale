@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useAboutPageTranslations } from "../../contexts/TranslationContext";
+import RichText from "../../components/ui/RichText";
 
 export default function ChiSiamoPage() {
   const { t } = useAboutPageTranslations();
@@ -27,9 +28,9 @@ export default function ChiSiamoPage() {
         <div className="container mx-auto px-4">
           {/* Avv. Marzia Amaranto */}
           <div className="max-w-6xl mx-auto mb-24">
-            <div className="grid md:grid-cols-[1fr_320px] gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-12 items-center justify-center">
               {/* Content */}
-              <div className="space-y-6 order-2 md:order-1">
+              <div className="space-y-6 order-2 md:order-1 h-[700px] flex flex-col justify-center">
                 <div>
                   <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-3">
                     {t.marzia.name}
@@ -41,25 +42,38 @@ export default function ChiSiamoPage() {
 
                 <div className="space-y-6 text-muted-foreground">
                   <div className="bg-accent/20 p-6 rounded-none border-l-4 border-primary">
-                    <p className="font-semibold text-secondary uppercase tracking-wide text-sm mb-2">
-                      {t.expertiseLabel}
-                    </p>
-                    <p className="font-bold text-foreground text-base">
-                      {t.marzia.education}
-                    </p>
+                    <RichText
+                      as="p"
+                      className="font-medium text-foreground text-base"
+                      html={t.marzia.education}
+                    />
                   </div>
 
-                  <p className="leading-relaxed text-lg text-foreground font-light">
-                    {t.marzia.expertise}
-                  </p>
+                  <div>
+                    <p className="font-semibold text-secondary uppercase tracking-wide text-sm mb-3">
+                      {t.expertiseLabelMain}
+                    </p>
+                    <ul className="space-y-3">
+                      {Array.isArray(t.marzia.expertise) &&
+                        t.marzia.expertise.map((item: any, idx: number) => (
+                          <li
+                            key={idx}
+                            className="leading-relaxed text-base text-foreground"
+                          >
+                            <strong>{item.title}:</strong> {item.description}
+                          </li>
+                        ))}
+                    </ul>
+                  </div>
 
                   <p className="leading-relaxed text-base text-foreground">
                     {t.marzia.experience}
                   </p>
-
-                  <p className="leading-relaxed text-sm text-muted-foreground italic border-l-2 border-accent pl-4">
-                    {t.marzia.publications}
-                  </p>
+                  <RichText
+                    as="div"
+                    className="leading-relaxed text-sm text-muted-foreground italic border-l-2 border-accent pl-4"
+                    html={t.marzia.publications}
+                  />
 
                   <div className="bg-secondary/5 p-6 rounded-none border-l-4 border-secondary">
                     <p className="text-sm font-medium text-secondary">
@@ -70,7 +84,7 @@ export default function ChiSiamoPage() {
               </div>
 
               {/* Image */}
-              <div className="relative w-full h-[700px] rounded-lg overflow-hidden shadow-2xl order-1 md:order-2">
+              <div className="relative w-full max-w-sm h-[700px] rounded-lg overflow-hidden shadow-2xl order-1 md:order-2 mx-auto">
                 <Image
                   src="/marzia.jpg"
                   alt={t.marzia.name}
@@ -84,9 +98,9 @@ export default function ChiSiamoPage() {
 
           {/* Avv. Antonio Amaranto */}
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-[320px_1fr] gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-12 items-center justify-center">
               {/* Image */}
-              <div className="relative w-full h-[700px] rounded-lg overflow-hidden shadow-2xl">
+              <div className="relative w-full max-w-sm h-[700px] rounded-lg overflow-hidden shadow-2xl mx-auto">
                 <Image
                   src="/antonio.jpg"
                   alt={t.antonio.name}
@@ -97,7 +111,7 @@ export default function ChiSiamoPage() {
               </div>
 
               {/* Content */}
-              <div className="space-y-6">
+              <div className="space-y-6 h-[700px] flex flex-col justify-center">
                 <div>
                   <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-3">
                     {t.antonio.name}
@@ -109,24 +123,32 @@ export default function ChiSiamoPage() {
 
                 <div className="space-y-6 text-muted-foreground">
                   <div className="bg-accent/20 p-6 rounded-none border-l-4 border-primary">
-                    <p className="font-semibold text-secondary text-lg uppercase tracking-wide mb-2">
-                      {t.expertiseLabel}
-                    </p>
-                    <p className="font-bold text-foreground text-base">
-                      {t.antonio.education}
-                    </p>
+                    <RichText
+                      as="p"
+                      className="font-medium text-foreground text-base"
+                      html={t.antonio.education}
+                    />
                   </div>
 
-                  <p className="leading-relaxed text-lg text-foreground font-light">
-                    {t.antonio.expertise}
-                  </p>
+                  <div>
+                    <p className="font-semibold text-secondary uppercase tracking-wide text-sm mb-3">
+                      {t.expertiseLabelMain}
+                    </p>
+                    <ul className="space-y-3">
+                      {Array.isArray(t.antonio.expertise) &&
+                        t.antonio.expertise.map((item: any, idx: number) => (
+                          <li
+                            key={idx}
+                            className="leading-relaxed text-base text-foreground"
+                          >
+                            <strong>{item.title}:</strong> {item.description}
+                          </li>
+                        ))}
+                    </ul>
+                  </div>
 
                   <p className="leading-relaxed text-base text-foreground">
                     {t.antonio.experience}
-                  </p>
-
-                  <p className="leading-relaxed text-sm text-muted-foreground italic border-l-2 border-accent pl-4">
-                    {t.antonio.recognition}
                   </p>
 
                   <div className="bg-secondary/5 p-6 rounded-none border-l-4 border-secondary">

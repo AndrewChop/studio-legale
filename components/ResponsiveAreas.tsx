@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Scale, Users, Heart, Building, Car } from "lucide-react";
 import { useAreasTranslations } from "../contexts/TranslationContext";
+import RichText from "./ui/RichText";
 
 export default function ResponsiveAreas() {
   const { t } = useAreasTranslations();
@@ -87,9 +88,11 @@ export default function ResponsiveAreas() {
               </div>
 
               {/* Description */}
-              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                {area.description}
-              </p>
+              <RichText
+                as="p"
+                className="text-sm md:text-base text-muted-foreground leading-relaxed"
+                html={area.description}
+              />
 
               {/* Visual indicator */}
               <div className="mt-4 pt-4 border-t border-border">
